@@ -1,0 +1,122 @@
+
+
+
+// PALABRAS RESERVADAS
+
+ESTRUCTURAS: $estructuras
+FUNCIONES: %funciones
+
+ESTRUCTURA: estructura
+DEFINIR: definir
+RETORNAR: retornar
+
+CADENA: cadena
+ENTERO: entero
+FLOTANTE: flotante
+CARACTER: caracter
+BOOL: bool
+
+VERDADERO: verdadero
+FALSO: falso
+
+SI: si
+ENTONCES: entonces
+SINO: sino
+CONTRARIO: contrario
+
+ELEGIR: elegir
+CASO: caso
+ROMPER: romper
+SIEMPRE: siempre
+
+PARA: para
+CONTINUAR: continuar
+
+MIENTRAS: mientras
+HACER: hacer
+
+IMPRIMIR: imprimir
+LEER: leer
+
+
+
+
+
+// LITERALES
+
+NUMERO_ENTERO: [0-9]+
+DECIMAL: [0-9]+.[0-9]*
+CHAR: '...'
+STRING: "..."
+
+
+
+
+// SIMBOLOS
+
+INDENTACION: espacios > pila
+DESINDENTACION: espacios < pila
+NL: \n
+
+
+
+DP: :
+CA: [
+CC: ]
+PAREN_A: (
+PAREN_C: )
+LLA: {
+LLC: }
+ASIG: =
+PUNTO: .
+COMA: ,
+PC: ;
+
+POR: *
+MAS: +
+MENOS: -
+DIVISION: /
+
+IGUAL: ==
+DIFERENTE: !=
+MENOR_QUE: <
+MAYOR_QUE: >
+AND: &&
+OR: ||
+NEGACION: !
+
+INCREMENTO: ++
+DECREMENTO: --
+
+
+// IDENTIFICADORES
+
+ID: [A-Za-z_$][A-Za-z0-9_$]*
+
+// COMENTARIOS
+
+comentario_ln: // cualquier cosa menos salto de linea
+comentario_bl: /*cualquier cosa*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

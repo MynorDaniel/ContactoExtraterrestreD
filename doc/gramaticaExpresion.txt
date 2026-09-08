@@ -1,0 +1,69 @@
+expresion
+    : expresionOr
+    ;
+
+expresionOr
+    : expresionAnd
+      ( '||' expresionAnd )*
+    ;
+
+expresionAnd
+    : expresionIgualdad
+      ( '&&' expresionIgualdad )*
+    ;
+
+expresionIgualdad
+    : expresionRelacional
+      ( ('==' | '!=') expresionRelacional )*
+    ;
+
+expresionRelacional
+    : expresionAditiva
+      ( ('<' | '>' | '<=' | '>=') expresionAditiva )*
+    ;
+
+expresionAditiva
+    : expresionMultiplicativa
+      ( ('+' | '-') expresionMultiplicativa )*
+    ;
+
+expresionMultiplicativa
+    : expresionUnaria
+      ( ('*' | '/' | '%') expresionUnaria )*
+    ;
+
+expresionUnaria
+    : ('!' | '-' | '+') expresionUnaria
+    | expresionPostfija
+    ;
+
+expresionPostfija
+    : expresionPrimaria sufijo*
+    ;
+
+sufijo
+    : '[' expresion ']'
+    | '.' IDENTIFICADOR
+    | '(' argumentos? ')'
+    ;
+
+expresionPrimaria
+    : literal
+    | IDENTIFICADOR
+    | '(' expresion ')'
+    | 'new' IDENTIFICADOR '(' argumentos? ')'
+    ;
+
+argumentos
+    : expresion (',' expresion)*
+    ;
+
+literal
+    : ENTERO
+    | DECIMAL
+    | CADENA
+    | CARACTER
+    | 'true'
+    | 'false'
+    | 'null'
+    ;

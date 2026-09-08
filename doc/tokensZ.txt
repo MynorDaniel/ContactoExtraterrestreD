@@ -1,0 +1,53 @@
+
+
+
+
+// PALABRAS RESERVADAS
+
+PUBLIC: public
+CLASS: class
+
+STRING: String
+INT: int
+
+
+
+
+
+// SIMBOLOS
+
+DP: :
+CA: [
+CC: ]
+PAREN_A: (
+PAREN_C: )
+LLA: {
+LLC: }
+ASIG: =
+PUNTO: .
+COMA: ,
+PC: ;
+
+
+
+
+
+// LITERALES
+
+NUMERO_ENTERO: [0-9]+
+DECIMAL: [0-9]+.[0-9]*
+CHAR: '...'
+CADENA: "..."
+
+
+
+
+// IDENTIFICADORES
+
+ID: [A-Za-z_$][A-Za-z0-9_$]*
+
+// COMENTARIOS
+
+comentario_ln: // cualquier cosa menos salto de linea
+comentario_bl: /*cualquier cosa*/
+

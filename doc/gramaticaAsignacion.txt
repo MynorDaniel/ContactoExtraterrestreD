@@ -1,0 +1,6 @@
+sentencia_asignacion → asignable "=" expresion ";"
+
+asignable  → IDENTIFICADOR ( sufijo_asignable )*
+
+sufijo_asignable → "[" expresion "]"        // indexado: componente[9]
+                  | "." IDENTIFICADOR        // miembro: .motor
