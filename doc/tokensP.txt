@@ -1,0 +1,86 @@
+ESTRUCTURAS: ##
+IMPORTAR: import
+
+VARIABLES: VARIABILES
+PRINCIPAL: MAIOR
+FIN: FINIS
+
+ESTO: esto
+SERIES: series
+
+NUMERUS: numerus
+DECIMALIS: decimalis
+LITTERA: littera
+TEXTUM: textum
+BOOL: bool
+
+VERUM: verum
+FALSUS: falsus
+
+NOVUS: novus
+
+SI: si
+ALITER: aliter
+FINIS: finis
+
+DUM: dum
+FACERE: facere
+PER: per
+
+PERGE: perge
+INTERRUMPE: interrumpe
+
+ID: [A-Za-z_$][A-Za-z0-9_$]*
+
+NUMERO_ENTERO: [0-9]+
+DECIMAL: [0-9]+\.[0-9]*
+CHAR: '\''.'\''
+STRING: '"'(~["\r\n])*'"'
+
+ASIG: =
+MAS: +
+MENOS: -
+POR: *
+DIVISION: /
+MODULO: %
+
+IGUAL: ==
+DIFERENTE: !=
+MENOR_QUE: <
+MAYOR_QUE: >
+MENOR_IGUAL: <=
+MAYOR_IGUAL: >=
+
+AND: &&
+OR: ||
+NEGACION: !
+
+INCREMENTO: ++
+DECREMENTO: --
+
+ASIG_SUMA: +=
+ASIG_RESTA: -=
+ASIG_MULT: *=
+
+PAREN_A: (
+PAREN_C: )
+
+LLA: {
+LLC: }
+
+CA: [
+CC: ]
+
+PUNTO: .
+COMA: ,
+PC: ;
+DP: :
+
+LECTURA: <<
+IMPRESION: >>
+
+COMENTARIO_LINEA: // ~[\r\n]*
+COMENTARIO_BLOQUE: /* .*? */
+
+NL: \r?\n
+ESPACIOS: [ \t]+

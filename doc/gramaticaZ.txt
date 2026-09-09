@@ -1,0 +1,7 @@
+s: clase* EOF;
+
+clase: modificador_acceso CLASS ID LLA (atributo | metodo)* LLC;
+
+atributo: ;
+
+metodo:

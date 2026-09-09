@@ -1,53 +1,88 @@
-
-
-
-
-// PALABRAS RESERVADAS
-
 PUBLIC: public
 CLASS: class
 
-STRING: String
 INT: int
+DOUBLE: double
+CHAR_T: char
+BOOLEAN: boolean
+STRING_T: String
+VOID: void
 
+NEW: new
 
+IF: if
+ELSE: else
 
+SWITCH: switch
+CASE: case
+DEFAULT: default
 
+FOR: for
+WHILE: while
+DO: do
 
-// SIMBOLOS
+BREAK: break
+CONTINUE: continue
+RETURN: return
 
-DP: :
-CA: [
-CC: ]
+PRINT: print
+PRINTLN: println
+READLN: readln
+
+VERDADERO: true
+FALSO: false
+NULL: null
+
+NUMERO_ENTERO: [0-9]+
+DECIMAL: [0-9]+\.[0-9]*
+CHAR: '\''.'\''
+STRING: '"'(~["\r\n])*'"'
+
+ASIG: =
+ASIG_SUMA: +=
+ASIG_RESTA: -=
+ASIG_MULT: *=
+
+POR: *
+MAS: +
+MENOS: -
+DIVISION: /
+MODULO: %
+
+INCREMENTO: ++
+DECREMENTO: --
+
+IGUAL: ==
+DIFERENTE: !=
+MENOR_QUE: <
+MAYOR_QUE: >
+MENOR_IGUAL: <=
+MAYOR_IGUAL: >=
+
+AND: &&
+OR: ||
+NEGACION: !
+
+INTERROGACION: ?
+
 PAREN_A: (
 PAREN_C: )
+
 LLA: {
 LLC: }
-ASIG: =
+
+CA: [
+CC: ]
+
 PUNTO: .
 COMA: ,
 PC: ;
-
-
-
-
-
-// LITERALES
-
-NUMERO_ENTERO: [0-9]+
-DECIMAL: [0-9]+.[0-9]*
-CHAR: '...'
-CADENA: "..."
-
-
-
-
-// IDENTIFICADORES
+DP: :
 
 ID: [A-Za-z_$][A-Za-z0-9_$]*
 
-// COMENTARIOS
+COMENTARIO_LINEA: // ~[\r\n]*
+COMENTARIO_BLOQUE: /* .*? */
 
-comentario_ln: // cualquier cosa menos salto de linea
-comentario_bl: /*cualquier cosa*/
-
+NL: \r?\n
+ESPACIOS: [ \t]+
