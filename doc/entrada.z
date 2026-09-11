@@ -1,0 +1,184 @@
+public class Contacto {
+
+    String nombre;
+    int edad = 0;
+    double promedio;
+    boolean activo = true;
+    char inicial = 'Z';
+    int[] numeros;
+    int[][] matriz;
+    Contacto siguiente;
+
+    public Contacto(String nombreParametro, int edadParametro) {
+        nombre = nombreParametro;
+        edad = edadParametro;
+    }
+
+    public Contacto() {
+        nombre = "Sin nombre";
+        edad = 0;
+    }
+
+    public void saludar() {
+        println("Hola! Me llamo " + nombre + " y tengo " + edad + " anios.");
+    }
+
+    public int calcularAnioNacimiento(int anioActual) {
+        return anioActual - edad;
+    }
+
+    public double promedioNotas(int[] notas, int n) {
+        double suma = 0.0;
+        int i;
+        for (i = 0; i < n; i++) {
+            suma = suma + notas[i];
+        }
+        return suma / n;
+    }
+
+    public boolean esMayorDeEdad() {
+        return edad >= 18;
+    }
+
+    public int operacionesAritmeticas(int a, int b) {
+        int suma = a + b;
+        int resta = a - b;
+        int multiplicacion = a * b;
+        int division = a / b;
+        int modulo = a % b;
+        return suma + resta + multiplicacion + division + modulo;
+    }
+
+    public void demoLogicas(int a, int b) {
+        boolean esMayor = (a > b);
+        boolean esMenorIgual = (a <= b);
+        boolean esMayorIgual = (a >= b);
+        boolean esIgual = (a == b);
+        boolean esDiferente = (a != b);
+        boolean condicionAnd = (a > 5 && b < 10);
+        boolean condicionOr = (a > 20 || b > 0);
+        boolean condicionNot = !(a == 10);
+    }
+
+    public void demoUnarios(int a, boolean bandera) {
+        int negativo = -a;
+        int positivo = +a;
+        boolean invertido = !bandera;
+    }
+
+    public void demoAsignaciones() {
+        int x = 5;
+        x += 3;
+        x -= 2;
+        x *= 2;
+        x++;
+        x--;
+    }
+
+    public String demoTernario(int edad) {
+        String mensaje = (edad >= 18) ? "Es mayor de edad" : "Es menor de edad";
+        return mensaje;
+    }
+
+    public void demoCondicionales(int edad, int opcion) {
+        if (edad > 18) {
+            println("Es mayor de edad.");
+        } else if (edad == 18) {
+            println("Justo tiene 18 anios!");
+        } else {
+            println("Es menor de edad.");
+        }
+
+        if (edad >= 18)
+            println("Es adulto");
+        else
+            println("Es menor");
+
+        if (edad > 0)
+            if (opcion == 1)
+                print("anidado");
+
+        switch (opcion) {
+            case 1:
+                println("Opcion 1 seleccionada");
+                break;
+            case 2:
+                println("Opcion 2 seleccionada");
+            default:
+                println("Opcion no valida");
+                break;
+        }
+    }
+
+    public void demoCiclos() {
+        for (int i = 0; i < 5; i++) {
+            println("Iteracion numero: " + i);
+            if (i == 2) {
+                continue;
+            }
+            if (i == 4) {
+                break;
+            }
+        }
+
+        for (;;) {
+            println("Este bucle nunca termina a menos que use un break...");
+            break;
+        }
+
+        int contador = 0;
+        while (contador < 3) {
+            println("Contador while: " + contador);
+            contador++;
+            if (contador == 1) {
+                continue;
+            }
+        }
+
+        int intentos = 0;
+        do {
+            intentos++;
+            println("Intento numero: " + intentos);
+            if (intentos == 2) {
+                break;
+            }
+        } while (intentos < 5);
+
+        {
+            int temp = 5;
+            println(temp);
+        }
+    }
+
+    public void demoArreglosYObjetos() {
+        int[] valores = new int[5];
+        int[][] tabla = new int[3][3];
+        int[] valoresIniciales = {1, 2, 3, 4, 5};
+        int[] vacio = {};
+        String[] nombres = {"Carlos", "Ana", "Pedro"};
+        valores[0] = 10;
+        valores[1] = valores[0] * 3;
+
+        Contacto amigo = new Contacto("Ana", 30);
+        Contacto vacioObjeto = new Contacto();
+        Contacto copia = new Contacto(amigo.nombre, amigo.edad);
+
+        if (amigo == null) {
+            print("Es posible comparar si un objeto es nulo");
+        }
+
+        Contacto otro = null;
+    }
+
+    public void demoLectura() {
+        readln();
+        String entrada;
+        entrada = readln();
+        println(entrada);
+    }
+
+    public int demoExpresionCompleja(int a, int b, int c) {
+        int resultado = (a + b) * c - (a % b) / 2;
+        return resultado;
+    }
+}

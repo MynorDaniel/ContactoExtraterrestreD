@@ -1,8 +1,91 @@
 grammar Y;
 
 tokens { INDENTACION, DESINDENTACION }
+    
+@lexer::header {
+    import java.util.ArrayDeque;
+    }
+    
+@lexer::members {
 
-s: secciones EOF;
+    private ArrayDeque<Integer> indentStack = new ArrayDeque<>();
+    private ArrayDeque<Token> pendingTokens = new ArrayDeque<>();
+
+    {
+        indentStack.push(0);
+    }
+
+    private boolean comentarioAdelante() {
+        int c1 = _input.LA(1);
+        int c2 = _input.LA(2);
+        return c1 == '/' && (c2 == '/' || c2 == '*');
+    }
+
+    private Token nuevoToken(int tipo, Token base) {
+        CommonToken t = new CommonToken(base);
+        t.setType(tipo);
+        t.setText(tipo == YParser.INDENTACION ? "<INDENTACION>" : "<DESINDENTACION>");
+        return t;
+    }
+
+    @Override
+    public Token nextToken() {
+        if (!pendingTokens.isEmpty()) {
+            return pendingTokens.poll();
+        }
+
+        Token t = super.nextToken();
+
+        if (t.getType() == Token.EOF) {
+            while (indentStack.peek() > 0) {
+                indentStack.pop();
+                pendingTokens.offer(nuevoToken(YParser.DESINDENTACION, t));
+            }
+            pendingTokens.offer(t);
+            return pendingTokens.poll();
+        }
+
+        if (t.getType() != NL) {
+            return t;
+        }
+
+        String texto = t.getText();
+        int ultimoSalto = Math.max(texto.lastIndexOf('\n'), texto.lastIndexOf('\r'));
+        int anchoIndentacion = texto.length() - (ultimoSalto + 1);
+
+        int siguiente = _input.LA(1);
+
+        if (siguiente == -1) {
+            pendingTokens.offer(t);
+            return pendingTokens.poll();
+        }
+
+        if (siguiente == '\r' || siguiente == '\n' || comentarioAdelante()) {
+            return nextToken();
+        }
+
+        pendingTokens.offer(t);
+
+        int actual = indentStack.peek();
+        if (anchoIndentacion > actual) {
+            indentStack.push(anchoIndentacion);
+            pendingTokens.offer(nuevoToken(YParser.INDENTACION, t));
+        } else if (anchoIndentacion < actual) {
+            while (indentStack.peek() > anchoIndentacion) {
+                indentStack.pop();
+                pendingTokens.offer(nuevoToken(YParser.DESINDENTACION, t));
+            }
+            if (indentStack.peek() != anchoIndentacion) {
+                throw new RuntimeException(
+                    "Indentacion inconsistente en la linea " + t.getLine());
+            }
+        }
+
+        return pendingTokens.poll();
+    }
+    }
+    
+    s: secciones EOF;
 
 secciones: estructuras funciones;
 
@@ -20,7 +103,7 @@ tipo: CADENA | ENTERO | FLOTANTE | CARACTER | BOOL | ID;
 
 funcion
     : DEFINIR ID PAREN_A parametros_funcion? PAREN_C tipo_retorno? DP NL
-      INDENTACION elemento_funcion+ DESINDENTACION
+    INDENTACION elemento_funcion+ DESINDENTACION
     ;
 
 parametros_funcion: parametro_funcion (COMA parametro_funcion)*;
@@ -84,24 +167,24 @@ acceso_struct: PUNTO ID;
 
 sIf
     : SI PAREN_A expresion PAREN_C ENTONCES NL
-      INDENTACION sentencia+ DESINDENTACION
-      sSino*
-      sContrario?
+    INDENTACION sentencia+ DESINDENTACION
+    sSino*
+    sContrario?
     ;
 
 sSino
     : SINO PAREN_A expresion PAREN_C ENTONCES NL
-      INDENTACION sentencia+ DESINDENTACION
+    INDENTACION sentencia+ DESINDENTACION
     ;
 
 sContrario
     : CONTRARIO NL
-      INDENTACION sentencia+ DESINDENTACION
+    INDENTACION sentencia+ DESINDENTACION
     ;
 
 sSwitch
     : ELEGIR PAREN_A expresion PAREN_C DP NL
-      INDENTACION caso+ siempre? DESINDENTACION
+    INDENTACION caso+ siempre? DESINDENTACION
     ;
 
 caso: CASO literal DP NL INDENTACION sentencia+ DESINDENTACION;
@@ -110,7 +193,7 @@ siempre: SIEMPRE DP NL INDENTACION sentencia+ DESINDENTACION;
 
 sFor
     : PARA PAREN_A forInit? PC expresion? PC forActualizacion? PAREN_C DP NL
-      INDENTACION sentencia+ DESINDENTACION
+    INDENTACION sentencia+ DESINDENTACION
     ;
 
 forInit
@@ -125,13 +208,13 @@ forActualizacion
 
 sWhile
     : MIENTRAS PAREN_A expresion PAREN_C HACER NL
-      INDENTACION sentencia+ DESINDENTACION
+    INDENTACION sentencia+ DESINDENTACION
     ;
 
 sDoWhile
     : HACER DP NL
-      INDENTACION sentencia+ DESINDENTACION
-      NL* MIENTRAS PAREN_A expresion PAREN_C NL
+    INDENTACION sentencia+ DESINDENTACION
+    NL* MIENTRAS PAREN_A expresion PAREN_C NL
     ;
 
 sContinue: CONTINUAR NL;
@@ -270,6 +353,6 @@ ID: [A-Za-z_$][A-Za-z0-9_$]*;
 COMENTARIO_LINEA: '//' ~[\r\n]* -> skip;
 COMENTARIO_BLOQUE: '/*' .*? '*/' -> skip;
 
-NL: '\r'? '\n';
+NL: '\r'? '\n' [ \t]*;
 
 WS: [ \t]+ -> skip;

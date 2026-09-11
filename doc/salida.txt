@@ -1,0 +1,2426 @@
+
+----- TOKENS Y -----
+Línea 1   Columna 1   | ESTRUCTURAS          | %estructuras
+Línea 1   Columna 13  | NL                   | 
+
+Línea 2   Columna 1   | ESTRUCTURA           | estructura
+Línea 2   Columna 12  | ID                   | Persona
+Línea 2   Columna 19  | DP                   | :
+Línea 2   Columna 20  | NL                   | 
+    
+Línea 2   Columna 20  | INDENTACION          | <INDENTACION>
+Línea 3   Columna 5   | ENTERO               | entero
+Línea 3   Columna 12  | ID                   | edad
+Línea 3   Columna 16  | NL                   | 
+    
+Línea 4   Columna 5   | CADENA               | cadena
+Línea 4   Columna 12  | ID                   | nombre
+Línea 4   Columna 18  | NL                   | 
+    
+Línea 5   Columna 5   | FLOTANTE             | flotante
+Línea 5   Columna 14  | ID                   | promedio
+Línea 5   Columna 22  | NL                   | 
+    
+Línea 6   Columna 5   | CARACTER             | caracter
+Línea 6   Columna 14  | ID                   | inicial
+Línea 6   Columna 21  | NL                   | 
+    
+Línea 7   Columna 5   | BOOL                 | bool
+Línea 7   Columna 10  | ID                   | activo
+Línea 7   Columna 16  | NL                   | 
+    
+Línea 8   Columna 5   | ENTERO               | entero
+Línea 8   Columna 12  | ID                   | calificaciones
+Línea 8   Columna 26  | CA                   | [
+Línea 8   Columna 27  | NUMERO_ENTERO        | 5
+Línea 8   Columna 28  | CC                   | ]
+Línea 9   Columna 1   | NL                   | 
+
+Línea 9   Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 10  Columna 1   | ESTRUCTURA           | estructura
+Línea 10  Columna 12  | ID                   | Curso
+Línea 10  Columna 17  | DP                   | :
+Línea 10  Columna 18  | NL                   | 
+    
+Línea 10  Columna 18  | INDENTACION          | <INDENTACION>
+Línea 11  Columna 5   | CADENA               | cadena
+Línea 11  Columna 12  | ID                   | titulo
+Línea 11  Columna 18  | NL                   | 
+    
+Línea 12  Columna 5   | ENTERO               | entero
+Línea 12  Columna 12  | ID                   | creditos
+Línea 12  Columna 20  | NL                   | 
+    
+Línea 13  Columna 5   | ID                   | Persona
+Línea 13  Columna 13  | ID                   | instructor
+Línea 14  Columna 1   | NL                   | 
+
+Línea 14  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 15  Columna 1   | ESTRUCTURA           | estructura
+Línea 15  Columna 12  | ID                   | Punto
+Línea 15  Columna 17  | DP                   | :
+Línea 15  Columna 18  | NL                   | 
+    
+Línea 15  Columna 18  | INDENTACION          | <INDENTACION>
+Línea 16  Columna 5   | ENTERO               | entero
+Línea 16  Columna 12  | ID                   | x
+Línea 16  Columna 13  | NL                   | 
+    
+Línea 17  Columna 5   | ENTERO               | entero
+Línea 17  Columna 12  | ID                   | y
+Línea 18  Columna 1   | NL                   | 
+
+Línea 18  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 19  Columna 1   | ESTRUCTURA           | estructura
+Línea 19  Columna 12  | ID                   | Local
+Línea 19  Columna 17  | DP                   | :
+Línea 19  Columna 18  | NL                   | 
+    
+Línea 19  Columna 18  | INDENTACION          | <INDENTACION>
+Línea 20  Columna 5   | ENTERO               | entero
+Línea 20  Columna 12  | ID                   | valor
+Línea 21  Columna 1   | NL                   | 
+
+Línea 21  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 22  Columna 1   | FUNCIONES            | %funciones
+Línea 22  Columna 11  | NL                   | 
+
+Línea 23  Columna 1   | DEFINIR              | definir
+Línea 23  Columna 9   | ID                   | sumar
+Línea 23  Columna 14  | PAREN_A              | (
+Línea 23  Columna 15  | ENTERO               | entero
+Línea 23  Columna 22  | ID                   | a
+Línea 23  Columna 23  | COMA                 | ,
+Línea 23  Columna 25  | ENTERO               | entero
+Línea 23  Columna 32  | ID                   | b
+Línea 23  Columna 33  | PAREN_C              | )
+Línea 23  Columna 35  | MENOS                | -
+Línea 23  Columna 36  | MAYOR_QUE            | >
+Línea 23  Columna 38  | ENTERO               | entero
+Línea 23  Columna 44  | DP                   | :
+Línea 23  Columna 45  | NL                   | 
+    
+Línea 23  Columna 45  | INDENTACION          | <INDENTACION>
+Línea 24  Columna 5   | ENTERO               | entero
+Línea 24  Columna 12  | ID                   | resultado
+Línea 24  Columna 21  | NL                   | 
+    
+Línea 25  Columna 5   | ID                   | resultado
+Línea 25  Columna 15  | ASIG                 | =
+Línea 25  Columna 17  | ID                   | a
+Línea 25  Columna 19  | MAS                  | +
+Línea 25  Columna 21  | ID                   | b
+Línea 25  Columna 22  | NL                   | 
+    
+Línea 26  Columna 5   | RETORNAR             | retornar
+Línea 26  Columna 14  | ID                   | resultado
+Línea 27  Columna 1   | NL                   | 
+
+Línea 27  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 28  Columna 1   | DEFINIR              | definir
+Línea 28  Columna 9   | ID                   | restar
+Línea 28  Columna 15  | PAREN_A              | (
+Línea 28  Columna 16  | ENTERO               | entero
+Línea 28  Columna 23  | ID                   | a
+Línea 28  Columna 24  | COMA                 | ,
+Línea 28  Columna 26  | ENTERO               | entero
+Línea 28  Columna 33  | ID                   | b
+Línea 28  Columna 34  | PAREN_C              | )
+Línea 28  Columna 36  | MENOS                | -
+Línea 28  Columna 37  | MAYOR_QUE            | >
+Línea 28  Columna 39  | ENTERO               | entero
+Línea 28  Columna 45  | DP                   | :
+Línea 28  Columna 46  | NL                   | 
+    
+Línea 28  Columna 46  | INDENTACION          | <INDENTACION>
+Línea 29  Columna 5   | RETORNAR             | retornar
+Línea 29  Columna 14  | ID                   | a
+Línea 29  Columna 16  | MENOS                | -
+Línea 29  Columna 18  | ID                   | b
+Línea 30  Columna 1   | NL                   | 
+
+Línea 30  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 31  Columna 1   | DEFINIR              | definir
+Línea 31  Columna 9   | ID                   | saludar
+Línea 31  Columna 16  | PAREN_A              | (
+Línea 31  Columna 17  | CADENA               | cadena
+Línea 31  Columna 24  | ID                   | nombre
+Línea 31  Columna 30  | PAREN_C              | )
+Línea 31  Columna 31  | DP                   | :
+Línea 31  Columna 32  | NL                   | 
+    
+Línea 31  Columna 32  | INDENTACION          | <INDENTACION>
+Línea 32  Columna 5   | IMPRIMIR             | imprimir
+Línea 32  Columna 13  | PAREN_A              | (
+Línea 32  Columna 14  | STRING               | "Hola "
+Línea 32  Columna 22  | MAS                  | +
+Línea 32  Columna 24  | ID                   | nombre
+Línea 32  Columna 30  | PAREN_C              | )
+Línea 33  Columna 1   | NL                   | 
+
+Línea 33  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 34  Columna 1   | DEFINIR              | definir
+Línea 34  Columna 9   | ID                   | sinParametrosNiRetorno
+Línea 34  Columna 31  | PAREN_A              | (
+Línea 34  Columna 32  | PAREN_C              | )
+Línea 34  Columna 33  | DP                   | :
+Línea 34  Columna 34  | NL                   | 
+    
+Línea 34  Columna 34  | INDENTACION          | <INDENTACION>
+Línea 35  Columna 5   | IMPRIMIR             | imprimir
+Línea 35  Columna 13  | PAREN_A              | (
+Línea 35  Columna 14  | STRING               | "Sin parametros ni retorno"
+Línea 35  Columna 41  | PAREN_C              | )
+Línea 36  Columna 1   | NL                   | 
+
+Línea 36  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 37  Columna 1   | DEFINIR              | definir
+Línea 37  Columna 9   | ID                   | procesarArreglo
+Línea 37  Columna 24  | PAREN_A              | (
+Línea 37  Columna 25  | CA                   | [
+Línea 37  Columna 26  | CC                   | ]
+Línea 37  Columna 28  | ENTERO               | entero
+Línea 37  Columna 35  | ID                   | numeros
+Línea 37  Columna 42  | COMA                 | ,
+Línea 37  Columna 44  | ENTERO               | entero
+Línea 37  Columna 51  | ID                   | tam
+Línea 37  Columna 54  | PAREN_C              | )
+Línea 37  Columna 56  | MENOS                | -
+Línea 37  Columna 57  | MAYOR_QUE            | >
+Línea 37  Columna 59  | ENTERO               | entero
+Línea 37  Columna 65  | DP                   | :
+Línea 37  Columna 66  | NL                   | 
+    
+Línea 37  Columna 66  | INDENTACION          | <INDENTACION>
+Línea 38  Columna 5   | ENTERO               | entero
+Línea 38  Columna 12  | ID                   | suma
+Línea 38  Columna 17  | ASIG                 | =
+Línea 38  Columna 19  | NUMERO_ENTERO        | 0
+Línea 38  Columna 20  | NL                   | 
+    
+Línea 39  Columna 5   | PARA                 | para
+Línea 39  Columna 9   | PAREN_A              | (
+Línea 39  Columna 10  | ENTERO               | entero
+Línea 39  Columna 17  | ID                   | i
+Línea 39  Columna 19  | ASIG                 | =
+Línea 39  Columna 21  | NUMERO_ENTERO        | 0
+Línea 39  Columna 22  | PC                   | ;
+Línea 39  Columna 24  | ID                   | i
+Línea 39  Columna 26  | MENOR_QUE            | <
+Línea 39  Columna 28  | ID                   | tam
+Línea 39  Columna 31  | PC                   | ;
+Línea 39  Columna 33  | ID                   | i
+Línea 39  Columna 34  | INCREMENTO           | ++
+Línea 39  Columna 36  | PAREN_C              | )
+Línea 39  Columna 37  | DP                   | :
+Línea 39  Columna 38  | NL                   | 
+        
+Línea 39  Columna 38  | INDENTACION          | <INDENTACION>
+Línea 40  Columna 9   | ID                   | suma
+Línea 40  Columna 14  | ASIG                 | =
+Línea 40  Columna 16  | ID                   | suma
+Línea 40  Columna 21  | MAS                  | +
+Línea 40  Columna 23  | ID                   | numeros
+Línea 40  Columna 30  | CA                   | [
+Línea 40  Columna 31  | ID                   | i
+Línea 40  Columna 32  | CC                   | ]
+Línea 40  Columna 33  | NL                   | 
+    
+Línea 40  Columna 33  | DESINDENTACION       | <DESINDENTACION>
+Línea 41  Columna 5   | RETORNAR             | retornar
+Línea 41  Columna 14  | ID                   | suma
+Línea 42  Columna 1   | NL                   | 
+
+Línea 42  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 43  Columna 1   | DEFINIR              | definir
+Línea 43  Columna 9   | ID                   | procesarPersona
+Línea 43  Columna 24  | PAREN_A              | (
+Línea 43  Columna 25  | LLA                  | {
+Línea 43  Columna 26  | LLC                  | }
+Línea 43  Columna 28  | ID                   | Persona
+Línea 43  Columna 36  | ID                   | p
+Línea 43  Columna 37  | PAREN_C              | )
+Línea 43  Columna 39  | MENOS                | -
+Línea 43  Columna 40  | MAYOR_QUE            | >
+Línea 43  Columna 42  | CADENA               | cadena
+Línea 43  Columna 48  | DP                   | :
+Línea 43  Columna 49  | NL                   | 
+    
+Línea 43  Columna 49  | INDENTACION          | <INDENTACION>
+Línea 44  Columna 5   | RETORNAR             | retornar
+Línea 44  Columna 14  | ID                   | p
+Línea 44  Columna 15  | PUNTO                | .
+Línea 44  Columna 16  | ID                   | nombre
+Línea 45  Columna 1   | NL                   | 
+
+Línea 45  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 46  Columna 1   | DEFINIR              | definir
+Línea 46  Columna 9   | ID                   | obtenerArreglo
+Línea 46  Columna 23  | PAREN_A              | (
+Línea 46  Columna 24  | PAREN_C              | )
+Línea 46  Columna 26  | MENOS                | -
+Línea 46  Columna 27  | MAYOR_QUE            | >
+Línea 46  Columna 29  | CA                   | [
+Línea 46  Columna 30  | CC                   | ]
+Línea 46  Columna 32  | ENTERO               | entero
+Línea 46  Columna 38  | DP                   | :
+Línea 46  Columna 39  | NL                   | 
+    
+Línea 46  Columna 39  | INDENTACION          | <INDENTACION>
+Línea 47  Columna 5   | ENTERO               | entero
+Línea 47  Columna 12  | ID                   | salida
+Línea 47  Columna 18  | CA                   | [
+Línea 47  Columna 19  | NUMERO_ENTERO        | 3
+Línea 47  Columna 20  | CC                   | ]
+Línea 47  Columna 22  | ASIG                 | =
+Línea 47  Columna 24  | LLA                  | {
+Línea 47  Columna 25  | NUMERO_ENTERO        | 1
+Línea 47  Columna 26  | COMA                 | ,
+Línea 47  Columna 28  | NUMERO_ENTERO        | 1
+Línea 47  Columna 29  | COMA                 | ,
+Línea 47  Columna 31  | NUMERO_ENTERO        | 1
+Línea 47  Columna 32  | LLC                  | }
+Línea 47  Columna 33  | NL                   | 
+    
+Línea 48  Columna 5   | RETORNAR             | retornar
+Línea 48  Columna 14  | ID                   | salida
+Línea 49  Columna 1   | NL                   | 
+
+Línea 49  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 50  Columna 1   | DEFINIR              | definir
+Línea 50  Columna 9   | ID                   | obtenerPersona
+Línea 50  Columna 23  | PAREN_A              | (
+Línea 50  Columna 24  | PAREN_C              | )
+Línea 50  Columna 26  | MENOS                | -
+Línea 50  Columna 27  | MAYOR_QUE            | >
+Línea 50  Columna 29  | LLA                  | {
+Línea 50  Columna 30  | LLC                  | }
+Línea 50  Columna 32  | ID                   | Persona
+Línea 50  Columna 39  | DP                   | :
+Línea 50  Columna 40  | NL                   | 
+    
+Línea 50  Columna 40  | INDENTACION          | <INDENTACION>
+Línea 51  Columna 5   | ID                   | Persona
+Línea 51  Columna 13  | ID                   | resultado
+Línea 51  Columna 22  | NL                   | 
+    
+Línea 52  Columna 5   | ID                   | resultado
+Línea 52  Columna 14  | PUNTO                | .
+Línea 52  Columna 15  | ID                   | nombre
+Línea 52  Columna 22  | ASIG                 | =
+Línea 52  Columna 24  | STRING               | "Alien"
+Línea 52  Columna 31  | NL                   | 
+    
+Línea 53  Columna 5   | ID                   | resultado
+Línea 53  Columna 14  | PUNTO                | .
+Línea 53  Columna 15  | ID                   | edad
+Línea 53  Columna 20  | ASIG                 | =
+Línea 53  Columna 22  | NUMERO_ENTERO        | 100
+Línea 53  Columna 25  | NL                   | 
+    
+Línea 54  Columna 5   | RETORNAR             | retornar
+Línea 54  Columna 14  | ID                   | resultado
+Línea 55  Columna 1   | NL                   | 
+
+Línea 55  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 56  Columna 1   | DEFINIR              | definir
+Línea 56  Columna 9   | ID                   | combos
+Línea 56  Columna 15  | PAREN_A              | (
+Línea 56  Columna 16  | ENTERO               | entero
+Línea 56  Columna 23  | ID                   | x
+Línea 56  Columna 24  | COMA                 | ,
+Línea 56  Columna 26  | CA                   | [
+Línea 56  Columna 27  | CC                   | ]
+Línea 56  Columna 29  | ENTERO               | entero
+Línea 56  Columna 36  | ID                   | arreglo
+Línea 56  Columna 43  | COMA                 | ,
+Línea 56  Columna 45  | LLA                  | {
+Línea 56  Columna 46  | LLC                  | }
+Línea 56  Columna 48  | ID                   | Persona
+Línea 56  Columna 56  | ID                   | p
+Línea 56  Columna 57  | PAREN_C              | )
+Línea 56  Columna 59  | MENOS                | -
+Línea 56  Columna 60  | MAYOR_QUE            | >
+Línea 56  Columna 62  | BOOL                 | bool
+Línea 56  Columna 66  | DP                   | :
+Línea 56  Columna 67  | NL                   | 
+    
+Línea 56  Columna 67  | INDENTACION          | <INDENTACION>
+Línea 57  Columna 5   | RETORNAR             | retornar
+Línea 57  Columna 14  | VERDADERO            | verdadero
+Línea 58  Columna 1   | NL                   | 
+
+Línea 58  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 59  Columna 1   | DEFINIR              | definir
+Línea 59  Columna 9   | ID                   | demoTipos
+Línea 59  Columna 18  | PAREN_A              | (
+Línea 59  Columna 19  | PAREN_C              | )
+Línea 59  Columna 20  | DP                   | :
+Línea 59  Columna 21  | NL                   | 
+    
+Línea 59  Columna 21  | INDENTACION          | <INDENTACION>
+Línea 60  Columna 5   | ENTERO               | entero
+Línea 60  Columna 12  | ID                   | sinInicializacion
+Línea 60  Columna 29  | NL                   | 
+    
+Línea 61  Columna 5   | ENTERO               | entero
+Línea 61  Columna 12  | ID                   | edadUsuario
+Línea 61  Columna 24  | ASIG                 | =
+Línea 61  Columna 26  | NUMERO_ENTERO        | 25
+Línea 61  Columna 28  | NL                   | 
+    
+Línea 62  Columna 5   | FLOTANTE             | flotante
+Línea 62  Columna 14  | ID                   | temperatura
+Línea 62  Columna 26  | ASIG                 | =
+Línea 62  Columna 28  | DECIMAL              | 36.6
+Línea 62  Columna 32  | NL                   | 
+    
+Línea 63  Columna 5   | CARACTER             | caracter
+Línea 63  Columna 14  | ID                   | inicial
+Línea 63  Columna 22  | ASIG                 | =
+Línea 63  Columna 24  | CHAR                 | 'A'
+Línea 63  Columna 27  | NL                   | 
+    
+Línea 64  Columna 5   | BOOL                 | bool
+Línea 64  Columna 10  | ID                   | bandera
+Línea 64  Columna 18  | ASIG                 | =
+Línea 64  Columna 20  | VERDADERO            | verdadero
+Línea 64  Columna 29  | NL                   | 
+    
+Línea 65  Columna 5   | BOOL                 | bool
+Línea 65  Columna 10  | ID                   | bandera2
+Línea 65  Columna 19  | ASIG                 | =
+Línea 65  Columna 21  | FALSO                | falso
+Línea 65  Columna 26  | NL                   | 
+    
+Línea 66  Columna 5   | CADENA               | cadena
+Línea 66  Columna 12  | ID                   | saludos
+Línea 66  Columna 20  | ASIG                 | =
+Línea 66  Columna 22  | STRING               | "Saludos zetarianos"
+Línea 66  Columna 42  | NL                   | 
+    
+Línea 67  Columna 5   | ENTERO               | entero
+Línea 67  Columna 12  | ID                   | numeros
+Línea 67  Columna 19  | CA                   | [
+Línea 67  Columna 20  | NUMERO_ENTERO        | 5
+Línea 67  Columna 21  | CC                   | ]
+Línea 67  Columna 23  | ASIG                 | =
+Línea 67  Columna 25  | LLA                  | {
+Línea 67  Columna 26  | NUMERO_ENTERO        | 10
+Línea 67  Columna 28  | COMA                 | ,
+Línea 67  Columna 30  | NUMERO_ENTERO        | 20
+Línea 67  Columna 32  | COMA                 | ,
+Línea 67  Columna 34  | NUMERO_ENTERO        | 30
+Línea 67  Columna 36  | COMA                 | ,
+Línea 67  Columna 38  | NUMERO_ENTERO        | 40
+Línea 67  Columna 40  | COMA                 | ,
+Línea 67  Columna 42  | NUMERO_ENTERO        | 50
+Línea 67  Columna 44  | LLC                  | }
+Línea 67  Columna 45  | NL                   | 
+    
+Línea 68  Columna 5   | ENTERO               | entero
+Línea 68  Columna 12  | ID                   | matriz
+Línea 68  Columna 18  | CA                   | [
+Línea 68  Columna 19  | NUMERO_ENTERO        | 2
+Línea 68  Columna 20  | CC                   | ]
+Línea 68  Columna 21  | CA                   | [
+Línea 68  Columna 22  | NUMERO_ENTERO        | 2
+Línea 68  Columna 23  | CC                   | ]
+Línea 68  Columna 25  | ASIG                 | =
+Línea 68  Columna 27  | LLA                  | {
+Línea 68  Columna 28  | LLA                  | {
+Línea 68  Columna 29  | NUMERO_ENTERO        | 1
+Línea 68  Columna 30  | COMA                 | ,
+Línea 68  Columna 32  | NUMERO_ENTERO        | 2
+Línea 68  Columna 33  | LLC                  | }
+Línea 68  Columna 34  | COMA                 | ,
+Línea 68  Columna 36  | LLA                  | {
+Línea 68  Columna 37  | NUMERO_ENTERO        | 3
+Línea 68  Columna 38  | COMA                 | ,
+Línea 68  Columna 40  | NUMERO_ENTERO        | 4
+Línea 68  Columna 41  | LLC                  | }
+Línea 68  Columna 42  | LLC                  | }
+Línea 68  Columna 43  | NL                   | 
+    
+Línea 69  Columna 5   | ID                   | Persona
+Línea 69  Columna 13  | ID                   | alumno1
+Línea 69  Columna 20  | NL                   | 
+    
+Línea 70  Columna 5   | ID                   | alumno1
+Línea 70  Columna 12  | PUNTO                | .
+Línea 70  Columna 13  | ID                   | nombre
+Línea 70  Columna 20  | ASIG                 | =
+Línea 70  Columna 22  | STRING               | "Yennifer"
+Línea 70  Columna 32  | NL                   | 
+    
+Línea 71  Columna 5   | ID                   | alumno1
+Línea 71  Columna 12  | PUNTO                | .
+Línea 71  Columna 13  | ID                   | calificaciones
+Línea 71  Columna 27  | CA                   | [
+Línea 71  Columna 28  | NUMERO_ENTERO        | 0
+Línea 71  Columna 29  | CC                   | ]
+Línea 71  Columna 31  | ASIG                 | =
+Línea 71  Columna 33  | NUMERO_ENTERO        | 100
+Línea 72  Columna 1   | NL                   | 
+
+Línea 72  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 73  Columna 1   | DEFINIR              | definir
+Línea 73  Columna 9   | ID                   | demoCondicionales
+Línea 73  Columna 26  | PAREN_A              | (
+Línea 73  Columna 27  | ENTERO               | entero
+Línea 73  Columna 34  | ID                   | x
+Línea 73  Columna 35  | COMA                 | ,
+Línea 73  Columna 37  | ENTERO               | entero
+Línea 73  Columna 44  | ID                   | y
+Línea 73  Columna 45  | PAREN_C              | )
+Línea 73  Columna 46  | DP                   | :
+Línea 73  Columna 47  | NL                   | 
+    
+Línea 73  Columna 47  | INDENTACION          | <INDENTACION>
+Línea 74  Columna 5   | BOOL                 | bool
+Línea 74  Columna 10  | ID                   | resultado
+Línea 74  Columna 19  | NL                   | 
+    
+Línea 75  Columna 5   | SI                   | si
+Línea 75  Columna 8   | PAREN_A              | (
+Línea 75  Columna 9   | ID                   | x
+Línea 75  Columna 11  | MAYOR_QUE            | >
+Línea 75  Columna 13  | NUMERO_ENTERO        | 0
+Línea 75  Columna 15  | AND                  | &&
+Línea 75  Columna 18  | ID                   | y
+Línea 75  Columna 20  | MAYOR_QUE            | >
+Línea 75  Columna 22  | NUMERO_ENTERO        | 0
+Línea 75  Columna 23  | PAREN_C              | )
+Línea 75  Columna 25  | ENTONCES             | entonces
+Línea 75  Columna 33  | NL                   | 
+        
+Línea 75  Columna 33  | INDENTACION          | <INDENTACION>
+Línea 76  Columna 9   | ID                   | resultado
+Línea 76  Columna 19  | ASIG                 | =
+Línea 76  Columna 21  | VERDADERO            | verdadero
+Línea 76  Columna 30  | NL                   | 
+    
+Línea 76  Columna 30  | DESINDENTACION       | <DESINDENTACION>
+Línea 77  Columna 5   | SINO                 | sino
+Línea 77  Columna 10  | PAREN_A              | (
+Línea 77  Columna 11  | ID                   | x
+Línea 77  Columna 13  | IGUAL                | ==
+Línea 77  Columna 16  | NUMERO_ENTERO        | 0
+Línea 77  Columna 18  | OR                   | ||
+Línea 77  Columna 21  | ID                   | y
+Línea 77  Columna 23  | IGUAL                | ==
+Línea 77  Columna 26  | NUMERO_ENTERO        | 0
+Línea 77  Columna 27  | PAREN_C              | )
+Línea 77  Columna 29  | ENTONCES             | entonces
+Línea 77  Columna 37  | NL                   | 
+        
+Línea 77  Columna 37  | INDENTACION          | <INDENTACION>
+Línea 78  Columna 9   | ID                   | resultado
+Línea 78  Columna 19  | ASIG                 | =
+Línea 78  Columna 21  | FALSO                | falso
+Línea 78  Columna 26  | NL                   | 
+    
+Línea 78  Columna 26  | DESINDENTACION       | <DESINDENTACION>
+Línea 79  Columna 5   | CONTRARIO            | contrario
+Línea 79  Columna 14  | NL                   | 
+        
+Línea 79  Columna 14  | INDENTACION          | <INDENTACION>
+Línea 80  Columna 9   | ID                   | resultado
+Línea 80  Columna 19  | ASIG                 | =
+Línea 80  Columna 21  | NEGACION             | !
+Línea 80  Columna 22  | PAREN_A              | (
+Línea 80  Columna 23  | ID                   | x
+Línea 80  Columna 25  | MENOR_QUE            | <
+Línea 80  Columna 27  | ID                   | y
+Línea 80  Columna 28  | PAREN_C              | )
+Línea 80  Columna 29  | NL                   | 
+    
+Línea 80  Columna 29  | DESINDENTACION       | <DESINDENTACION>
+Línea 81  Columna 5   | SI                   | si
+Línea 81  Columna 8   | PAREN_A              | (
+Línea 81  Columna 9   | ID                   | x
+Línea 81  Columna 11  | DIFERENTE            | !=
+Línea 81  Columna 14  | ID                   | y
+Línea 81  Columna 15  | PAREN_C              | )
+Línea 81  Columna 17  | ENTONCES             | entonces
+Línea 81  Columna 25  | NL                   | 
+        
+Línea 81  Columna 25  | INDENTACION          | <INDENTACION>
+Línea 82  Columna 9   | IMPRIMIR             | imprimir
+Línea 82  Columna 17  | PAREN_A              | (
+Línea 82  Columna 18  | STRING               | "Son diferentes"
+Línea 82  Columna 34  | PAREN_C              | )
+Línea 83  Columna 1   | NL                   | 
+
+Línea 83  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 83  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 84  Columna 1   | DEFINIR              | definir
+Línea 84  Columna 9   | ID                   | demoSwitch
+Línea 84  Columna 19  | PAREN_A              | (
+Línea 84  Columna 20  | ENTERO               | entero
+Línea 84  Columna 27  | ID                   | opcion
+Línea 84  Columna 33  | PAREN_C              | )
+Línea 84  Columna 35  | MENOS                | -
+Línea 84  Columna 36  | MAYOR_QUE            | >
+Línea 84  Columna 38  | ENTERO               | entero
+Línea 84  Columna 44  | DP                   | :
+Línea 84  Columna 45  | NL                   | 
+    
+Línea 84  Columna 45  | INDENTACION          | <INDENTACION>
+Línea 85  Columna 5   | ENTERO               | entero
+Línea 85  Columna 12  | ID                   | x
+Línea 85  Columna 13  | NL                   | 
+    
+Línea 86  Columna 5   | ELEGIR               | elegir
+Línea 86  Columna 11  | PAREN_A              | (
+Línea 86  Columna 12  | ID                   | opcion
+Línea 86  Columna 18  | PAREN_C              | )
+Línea 86  Columna 19  | DP                   | :
+Línea 86  Columna 20  | NL                   | 
+        
+Línea 86  Columna 20  | INDENTACION          | <INDENTACION>
+Línea 87  Columna 9   | CASO                 | caso
+Línea 87  Columna 14  | NUMERO_ENTERO        | 1
+Línea 87  Columna 15  | DP                   | :
+Línea 87  Columna 16  | NL                   | 
+            
+Línea 87  Columna 16  | INDENTACION          | <INDENTACION>
+Línea 88  Columna 13  | ID                   | x
+Línea 88  Columna 15  | ASIG                 | =
+Línea 88  Columna 17  | NUMERO_ENTERO        | 10
+Línea 88  Columna 19  | NL                   | 
+            
+Línea 89  Columna 13  | ROMPER               | romper
+Línea 89  Columna 19  | NL                   | 
+        
+Línea 89  Columna 19  | DESINDENTACION       | <DESINDENTACION>
+Línea 90  Columna 9   | CASO                 | caso
+Línea 90  Columna 14  | NUMERO_ENTERO        | 2
+Línea 90  Columna 15  | DP                   | :
+Línea 90  Columna 16  | NL                   | 
+            
+Línea 90  Columna 16  | INDENTACION          | <INDENTACION>
+Línea 91  Columna 13  | ID                   | x
+Línea 91  Columna 15  | ASIG                 | =
+Línea 91  Columna 17  | NUMERO_ENTERO        | 20
+Línea 91  Columna 19  | NL                   | 
+            
+Línea 92  Columna 13  | ROMPER               | romper
+Línea 92  Columna 19  | NL                   | 
+        
+Línea 92  Columna 19  | DESINDENTACION       | <DESINDENTACION>
+Línea 93  Columna 9   | SIEMPRE              | siempre
+Línea 93  Columna 16  | DP                   | :
+Línea 93  Columna 17  | NL                   | 
+            
+Línea 93  Columna 17  | INDENTACION          | <INDENTACION>
+Línea 94  Columna 13  | ID                   | x
+Línea 94  Columna 15  | ASIG                 | =
+Línea 94  Columna 17  | NUMERO_ENTERO        | 30
+Línea 94  Columna 19  | NL                   | 
+            
+Línea 95  Columna 13  | ROMPER               | romper
+Línea 95  Columna 19  | NL                   | 
+    
+Línea 95  Columna 19  | DESINDENTACION       | <DESINDENTACION>
+Línea 95  Columna 19  | DESINDENTACION       | <DESINDENTACION>
+Línea 96  Columna 5   | RETORNAR             | retornar
+Línea 96  Columna 14  | ID                   | x
+Línea 97  Columna 1   | NL                   | 
+
+Línea 97  Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 98  Columna 1   | DEFINIR              | definir
+Línea 98  Columna 9   | ID                   | demoCiclos
+Línea 98  Columna 19  | PAREN_A              | (
+Línea 98  Columna 20  | PAREN_C              | )
+Línea 98  Columna 21  | DP                   | :
+Línea 98  Columna 22  | NL                   | 
+    
+Línea 98  Columna 22  | INDENTACION          | <INDENTACION>
+Línea 99  Columna 5   | ENTERO               | entero
+Línea 99  Columna 12  | ID                   | contador
+Línea 99  Columna 21  | ASIG                 | =
+Línea 99  Columna 23  | NUMERO_ENTERO        | 0
+Línea 99  Columna 24  | NL                   | 
+    
+Línea 100 Columna 5   | MIENTRAS             | mientras
+Línea 100 Columna 13  | PAREN_A              | (
+Línea 100 Columna 14  | ID                   | contador
+Línea 100 Columna 23  | MENOR_QUE            | <
+Línea 100 Columna 25  | NUMERO_ENTERO        | 5
+Línea 100 Columna 26  | PAREN_C              | )
+Línea 100 Columna 28  | HACER                | hacer
+Línea 100 Columna 33  | NL                   | 
+        
+Línea 100 Columna 33  | INDENTACION          | <INDENTACION>
+Línea 101 Columna 9   | ID                   | contador
+Línea 101 Columna 17  | INCREMENTO           | ++
+Línea 101 Columna 19  | NL                   | 
+        
+Línea 102 Columna 9   | SI                   | si
+Línea 102 Columna 12  | PAREN_A              | (
+Línea 102 Columna 13  | ID                   | contador
+Línea 102 Columna 22  | IGUAL                | ==
+Línea 102 Columna 25  | NUMERO_ENTERO        | 2
+Línea 102 Columna 26  | PAREN_C              | )
+Línea 102 Columna 28  | ENTONCES             | entonces
+Línea 102 Columna 36  | NL                   | 
+            
+Línea 102 Columna 36  | INDENTACION          | <INDENTACION>
+Línea 103 Columna 13  | CONTINUAR            | continuar
+Línea 103 Columna 22  | NL                   | 
+    
+Línea 103 Columna 22  | DESINDENTACION       | <DESINDENTACION>
+Línea 103 Columna 22  | DESINDENTACION       | <DESINDENTACION>
+Línea 104 Columna 5   | ENTERO               | entero
+Línea 104 Columna 12  | ID                   | intentos
+Línea 104 Columna 21  | ASIG                 | =
+Línea 104 Columna 23  | NUMERO_ENTERO        | 0
+Línea 104 Columna 24  | NL                   | 
+    
+Línea 105 Columna 5   | HACER                | hacer
+Línea 105 Columna 10  | DP                   | :
+Línea 105 Columna 11  | NL                   | 
+        
+Línea 105 Columna 11  | INDENTACION          | <INDENTACION>
+Línea 106 Columna 9   | ID                   | intentos
+Línea 106 Columna 17  | INCREMENTO           | ++
+Línea 106 Columna 19  | NL                   | 
+        
+Línea 107 Columna 9   | SI                   | si
+Línea 107 Columna 12  | PAREN_A              | (
+Línea 107 Columna 13  | ID                   | intentos
+Línea 107 Columna 22  | IGUAL                | ==
+Línea 107 Columna 25  | NUMERO_ENTERO        | 4
+Línea 107 Columna 26  | PAREN_C              | )
+Línea 107 Columna 28  | ENTONCES             | entonces
+Línea 107 Columna 36  | NL                   | 
+            
+Línea 107 Columna 36  | INDENTACION          | <INDENTACION>
+Línea 108 Columna 13  | ROMPER               | romper
+Línea 108 Columna 19  | NL                   | 
+    
+Línea 108 Columna 19  | DESINDENTACION       | <DESINDENTACION>
+Línea 108 Columna 19  | DESINDENTACION       | <DESINDENTACION>
+Línea 109 Columna 5   | MIENTRAS             | mientras
+Línea 109 Columna 13  | PAREN_A              | (
+Línea 109 Columna 14  | ID                   | intentos
+Línea 109 Columna 23  | MENOR_QUE            | <
+Línea 109 Columna 25  | NUMERO_ENTERO        | 10
+Línea 109 Columna 27  | PAREN_C              | )
+Línea 109 Columna 28  | NL                   | 
+    
+Línea 110 Columna 5   | PARA                 | para
+Línea 110 Columna 9   | PAREN_A              | (
+Línea 110 Columna 10  | ENTERO               | entero
+Línea 110 Columna 17  | ID                   | i
+Línea 110 Columna 19  | ASIG                 | =
+Línea 110 Columna 21  | NUMERO_ENTERO        | 0
+Línea 110 Columna 22  | PC                   | ;
+Línea 110 Columna 24  | ID                   | i
+Línea 110 Columna 26  | MENOR_QUE            | <
+Línea 110 Columna 28  | NUMERO_ENTERO        | 10
+Línea 110 Columna 30  | PC                   | ;
+Línea 110 Columna 32  | ID                   | i
+Línea 110 Columna 33  | INCREMENTO           | ++
+Línea 110 Columna 35  | PAREN_C              | )
+Línea 110 Columna 36  | DP                   | :
+Línea 110 Columna 37  | NL                   | 
+        
+Línea 110 Columna 37  | INDENTACION          | <INDENTACION>
+Línea 111 Columna 9   | SI                   | si
+Línea 111 Columna 12  | PAREN_A              | (
+Línea 111 Columna 13  | ID                   | i
+Línea 111 Columna 15  | IGUAL                | ==
+Línea 111 Columna 18  | NUMERO_ENTERO        | 3
+Línea 111 Columna 19  | PAREN_C              | )
+Línea 111 Columna 21  | ENTONCES             | entonces
+Línea 111 Columna 29  | NL                   | 
+            
+Línea 111 Columna 29  | INDENTACION          | <INDENTACION>
+Línea 112 Columna 13  | CONTINUAR            | continuar
+Línea 112 Columna 22  | NL                   | 
+        
+Línea 112 Columna 22  | DESINDENTACION       | <DESINDENTACION>
+Línea 113 Columna 9   | SI                   | si
+Línea 113 Columna 12  | PAREN_A              | (
+Línea 113 Columna 13  | ID                   | i
+Línea 113 Columna 15  | IGUAL                | ==
+Línea 113 Columna 18  | NUMERO_ENTERO        | 8
+Línea 113 Columna 19  | PAREN_C              | )
+Línea 113 Columna 21  | ENTONCES             | entonces
+Línea 113 Columna 29  | NL                   | 
+            
+Línea 113 Columna 29  | INDENTACION          | <INDENTACION>
+Línea 114 Columna 13  | ROMPER               | romper
+Línea 115 Columna 1   | NL                   | 
+
+Línea 115 Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 115 Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 115 Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 116 Columna 1   | DEFINIR              | definir
+Línea 116 Columna 9   | ID                   | demoUnario
+Línea 116 Columna 19  | PAREN_A              | (
+Línea 116 Columna 20  | ENTERO               | entero
+Línea 116 Columna 27  | ID                   | x
+Línea 116 Columna 28  | COMA                 | ,
+Línea 116 Columna 30  | ENTERO               | entero
+Línea 116 Columna 37  | ID                   | y
+Línea 116 Columna 38  | PAREN_C              | )
+Línea 116 Columna 39  | DP                   | :
+Línea 116 Columna 40  | NL                   | 
+    
+Línea 116 Columna 40  | INDENTACION          | <INDENTACION>
+Línea 117 Columna 5   | ENTERO               | entero
+Línea 117 Columna 12  | ID                   | z
+Línea 117 Columna 13  | NL                   | 
+    
+Línea 118 Columna 5   | ID                   | z
+Línea 118 Columna 7   | ASIG                 | =
+Línea 118 Columna 9   | MENOS                | -
+Línea 118 Columna 10  | ID                   | x
+Línea 118 Columna 12  | MAS                  | +
+Línea 118 Columna 14  | MAS                  | +
+Línea 118 Columna 15  | ID                   | y
+Línea 118 Columna 16  | NL                   | 
+    
+Línea 119 Columna 5   | ENTERO               | entero
+Línea 119 Columna 12  | ID                   | cociente
+Línea 119 Columna 20  | NL                   | 
+    
+Línea 120 Columna 5   | ID                   | cociente
+Línea 120 Columna 14  | ASIG                 | =
+Línea 120 Columna 16  | ID                   | x
+Línea 120 Columna 18  | DIVISION             | /
+Línea 120 Columna 20  | ID                   | y
+Línea 120 Columna 21  | NL                   | 
+    
+Línea 121 Columna 5   | ENTERO               | entero
+Línea 121 Columna 12  | ID                   | producto
+Línea 121 Columna 20  | NL                   | 
+    
+Línea 122 Columna 5   | ID                   | producto
+Línea 122 Columna 14  | ASIG                 | =
+Línea 122 Columna 16  | ID                   | x
+Línea 122 Columna 18  | POR                  | *
+Línea 122 Columna 20  | ID                   | y
+Línea 122 Columna 21  | NL                   | 
+    
+Línea 123 Columna 5   | BOOL                 | bool
+Línea 123 Columna 10  | ID                   | r
+Línea 123 Columna 11  | NL                   | 
+    
+Línea 124 Columna 5   | ID                   | r
+Línea 124 Columna 7   | ASIG                 | =
+Línea 124 Columna 9   | NEGACION             | !
+Línea 124 Columna 10  | PAREN_A              | (
+Línea 124 Columna 11  | ID                   | x
+Línea 124 Columna 13  | IGUAL                | ==
+Línea 124 Columna 16  | ID                   | y
+Línea 124 Columna 17  | PAREN_C              | )
+Línea 124 Columna 18  | NL                   | 
+    
+Línea 125 Columna 5   | ID                   | z
+Línea 125 Columna 6   | DECREMENTO           | --
+Línea 125 Columna 8   | NL                   | 
+    
+Línea 126 Columna 5   | ID                   | z
+Línea 126 Columna 6   | INCREMENTO           | ++
+Línea 127 Columna 1   | NL                   | 
+
+Línea 127 Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 128 Columna 1   | DEFINIR              | definir
+Línea 128 Columna 9   | ID                   | demoEstructuraLocal
+Línea 128 Columna 28  | PAREN_A              | (
+Línea 128 Columna 29  | PAREN_C              | )
+Línea 128 Columna 30  | DP                   | :
+Línea 128 Columna 31  | NL                   | 
+    
+Línea 128 Columna 31  | INDENTACION          | <INDENTACION>
+Línea 129 Columna 5   | ID                   | Local
+Línea 129 Columna 11  | ID                   | l1
+Línea 129 Columna 14  | ASIG                 | =
+Línea 129 Columna 16  | LLA                  | {
+Línea 129 Columna 17  | NUMERO_ENTERO        | 99
+Línea 129 Columna 19  | LLC                  | }
+Línea 129 Columna 20  | NL                   | 
+    
+Línea 130 Columna 5   | ID                   | Punto
+Línea 130 Columna 11  | ID                   | p1
+Línea 130 Columna 14  | ASIG                 | =
+Línea 130 Columna 16  | LLA                  | {
+Línea 130 Columna 17  | NUMERO_ENTERO        | 10
+Línea 130 Columna 19  | COMA                 | ,
+Línea 130 Columna 21  | NUMERO_ENTERO        | 20
+Línea 130 Columna 23  | LLC                  | }
+Línea 130 Columna 24  | NL                   | 
+    
+Línea 131 Columna 5   | ID                   | Punto
+Línea 131 Columna 11  | ID                   | p2
+Línea 131 Columna 14  | ASIG                 | =
+Línea 131 Columna 16  | LLA                  | {
+Línea 131 Columna 17  | NUMERO_ENTERO        | 5
+Línea 131 Columna 18  | COMA                 | ,
+Línea 131 Columna 20  | NUMERO_ENTERO        | 15
+Línea 131 Columna 22  | LLC                  | }
+Línea 131 Columna 23  | NL                   | 
+    
+Línea 132 Columna 5   | ENTERO               | entero
+Línea 132 Columna 12  | ID                   | sumaX
+Línea 132 Columna 17  | NL                   | 
+    
+Línea 133 Columna 5   | ID                   | sumaX
+Línea 133 Columna 11  | ASIG                 | =
+Línea 133 Columna 13  | ID                   | p1
+Línea 133 Columna 15  | PUNTO                | .
+Línea 133 Columna 16  | ID                   | x
+Línea 133 Columna 18  | MAS                  | +
+Línea 133 Columna 20  | ID                   | p2
+Línea 133 Columna 22  | PUNTO                | .
+Línea 133 Columna 23  | ID                   | x
+Línea 134 Columna 1   | NL                   | 
+
+Línea 134 Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 135 Columna 1   | DEFINIR              | definir
+Línea 135 Columna 9   | ID                   | demoLectura
+Línea 135 Columna 20  | PAREN_A              | (
+Línea 135 Columna 21  | PAREN_C              | )
+Línea 135 Columna 22  | DP                   | :
+Línea 135 Columna 23  | NL                   | 
+    
+Línea 135 Columna 23  | INDENTACION          | <INDENTACION>
+Línea 136 Columna 5   | CADENA               | cadena
+Línea 136 Columna 12  | ID                   | entrada
+Línea 136 Columna 20  | ASIG                 | =
+Línea 136 Columna 22  | LEER                 | leer
+Línea 136 Columna 26  | PAREN_A              | (
+Línea 136 Columna 27  | PAREN_C              | )
+Línea 136 Columna 28  | NL                   | 
+    
+Línea 137 Columna 5   | ENTERO               | entero
+Línea 137 Columna 12  | ID                   | valorLeido
+Línea 137 Columna 22  | NL                   | 
+    
+Línea 138 Columna 5   | ID                   | valorLeido
+Línea 138 Columna 16  | ASIG                 | =
+Línea 138 Columna 18  | LEER                 | leer
+Línea 138 Columna 22  | PAREN_A              | (
+Línea 138 Columna 23  | PAREN_C              | )
+Línea 138 Columna 24  | NL                   | 
+    
+Línea 139 Columna 5   | IMPRIMIR             | imprimir
+Línea 139 Columna 13  | PAREN_A              | (
+Línea 139 Columna 14  | ID                   | entrada
+Línea 139 Columna 21  | PAREN_C              | )
+Línea 140 Columna 1   | NL                   | 
+
+Línea 140 Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 141 Columna 1   | DEFINIR              | definir
+Línea 141 Columna 9   | ID                   | demoAcceso
+Línea 141 Columna 19  | PAREN_A              | (
+Línea 141 Columna 20  | LLA                  | {
+Línea 141 Columna 21  | LLC                  | }
+Línea 141 Columna 23  | ID                   | Curso
+Línea 141 Columna 29  | ID                   | c
+Línea 141 Columna 30  | PAREN_C              | )
+Línea 141 Columna 32  | MENOS                | -
+Línea 141 Columna 33  | MAYOR_QUE            | >
+Línea 141 Columna 35  | CADENA               | cadena
+Línea 141 Columna 41  | DP                   | :
+Línea 141 Columna 42  | NL                   | 
+    
+Línea 141 Columna 42  | INDENTACION          | <INDENTACION>
+Línea 142 Columna 5   | RETORNAR             | retornar
+Línea 142 Columna 14  | ID                   | c
+Línea 142 Columna 15  | PUNTO                | .
+Línea 142 Columna 16  | ID                   | instructor
+Línea 142 Columna 26  | PUNTO                | .
+Línea 142 Columna 27  | ID                   | nombre
+Línea 143 Columna 1   | NL                   | 
+
+Línea 143 Columna 1   | DESINDENTACION       | <DESINDENTACION>
+Línea 144 Columna 1   | DEFINIR              | definir
+Línea 144 Columna 9   | ID                   | principal
+Línea 144 Columna 18  | PAREN_A              | (
+Línea 144 Columna 19  | PAREN_C              | )
+Línea 144 Columna 20  | DP                   | :
+Línea 144 Columna 21  | NL                   | 
+    
+Línea 144 Columna 21  | INDENTACION          | <INDENTACION>
+Línea 145 Columna 5   | ENTERO               | entero
+Línea 145 Columna 12  | ID                   | r1
+Línea 145 Columna 14  | NL                   | 
+    
+Línea 146 Columna 5   | ID                   | r1
+Línea 146 Columna 8   | ASIG                 | =
+Línea 146 Columna 10  | ID                   | sumar
+Línea 146 Columna 15  | PAREN_A              | (
+Línea 146 Columna 16  | NUMERO_ENTERO        | 5
+Línea 146 Columna 17  | COMA                 | ,
+Línea 146 Columna 19  | NUMERO_ENTERO        | 10
+Línea 146 Columna 21  | PAREN_C              | )
+Línea 146 Columna 22  | NL                   | 
+    
+Línea 147 Columna 5   | ENTERO               | entero
+Línea 147 Columna 12  | ID                   | r2
+Línea 147 Columna 14  | NL                   | 
+    
+Línea 148 Columna 5   | ID                   | r2
+Línea 148 Columna 8   | ASIG                 | =
+Línea 148 Columna 10  | ID                   | restar
+Línea 148 Columna 16  | PAREN_A              | (
+Línea 148 Columna 17  | ID                   | r1
+Línea 148 Columna 19  | COMA                 | ,
+Línea 148 Columna 21  | NUMERO_ENTERO        | 3
+Línea 148 Columna 22  | PAREN_C              | )
+Línea 148 Columna 23  | NL                   | 
+    
+Línea 149 Columna 5   | ID                   | saludar
+Línea 149 Columna 12  | PAREN_A              | (
+Línea 149 Columna 13  | STRING               | "Zetarianos"
+Línea 149 Columna 25  | PAREN_C              | )
+Línea 149 Columna 26  | NL                   | 
+    
+Línea 150 Columna 5   | IMPRIMIR             | imprimir
+Línea 150 Columna 13  | PAREN_A              | (
+Línea 150 Columna 14  | ID                   | r2
+Línea 150 Columna 16  | PAREN_C              | )
+Línea 150 Columna 17  | NL                   | 
+    
+Línea 151 Columna 5   | ENTERO               | entero
+Línea 151 Columna 12  | ID                   | arr
+Línea 151 Columna 15  | CA                   | [
+Línea 151 Columna 16  | NUMERO_ENTERO        | 3
+Línea 151 Columna 17  | CC                   | ]
+Línea 151 Columna 19  | ASIG                 | =
+Línea 151 Columna 21  | LLA                  | {
+Línea 151 Columna 22  | NUMERO_ENTERO        | 1
+Línea 151 Columna 23  | COMA                 | ,
+Línea 151 Columna 25  | NUMERO_ENTERO        | 2
+Línea 151 Columna 26  | COMA                 | ,
+Línea 151 Columna 28  | NUMERO_ENTERO        | 3
+Línea 151 Columna 29  | LLC                  | }
+Línea 151 Columna 30  | NL                   | 
+    
+Línea 152 Columna 5   | ENTERO               | entero
+Línea 152 Columna 12  | ID                   | total
+Línea 152 Columna 17  | NL                   | 
+    
+Línea 153 Columna 5   | ID                   | total
+Línea 153 Columna 11  | ASIG                 | =
+Línea 153 Columna 13  | ID                   | procesarArreglo
+Línea 153 Columna 28  | PAREN_A              | (
+Línea 153 Columna 29  | ID                   | arr
+Línea 153 Columna 32  | COMA                 | ,
+Línea 153 Columna 34  | NUMERO_ENTERO        | 3
+Línea 153 Columna 35  | PAREN_C              | )
+Línea 153 Columna 36  | NL                   | 
+    
+Línea 154 Columna 5   | IMPRIMIR             | imprimir
+Línea 154 Columna 13  | PAREN_A              | (
+Línea 154 Columna 14  | ID                   | total
+Línea 154 Columna 19  | PAREN_C              | )
+Línea 154 Columna 20  | NL                   | 
+    
+Línea 155 Columna 5   | ID                   | sinParametrosNiRetorno
+Línea 155 Columna 27  | PAREN_A              | (
+Línea 155 Columna 28  | PAREN_C              | )
+Línea 155 Columna 29  | NL                   | 
+
+Línea 156 Columna 1   | DESINDENTACION       | <DESINDENTACION>
+----- TOKENS Z -----
+Línea 1   Columna 1   | PUBLIC               | public
+Línea 1   Columna 8   | CLASS                | class
+Línea 1   Columna 14  | ID                   | Contacto
+Línea 1   Columna 23  | LLA                  | {
+Línea 3   Columna 5   | STRING_T             | String
+Línea 3   Columna 12  | ID                   | nombre
+Línea 3   Columna 18  | PC                   | ;
+Línea 4   Columna 5   | INT                  | int
+Línea 4   Columna 9   | ID                   | edad
+Línea 4   Columna 14  | ASIG                 | =
+Línea 4   Columna 16  | NUMERO_ENTERO        | 0
+Línea 4   Columna 17  | PC                   | ;
+Línea 5   Columna 5   | DOUBLE               | double
+Línea 5   Columna 12  | ID                   | promedio
+Línea 5   Columna 20  | PC                   | ;
+Línea 6   Columna 5   | BOOLEAN              | boolean
+Línea 6   Columna 13  | ID                   | activo
+Línea 6   Columna 20  | ASIG                 | =
+Línea 6   Columna 22  | VERDADERO            | true
+Línea 6   Columna 26  | PC                   | ;
+Línea 7   Columna 5   | CHAR_T               | char
+Línea 7   Columna 10  | ID                   | inicial
+Línea 7   Columna 18  | ASIG                 | =
+Línea 7   Columna 20  | CHAR                 | 'Z'
+Línea 7   Columna 23  | PC                   | ;
+Línea 8   Columna 5   | INT                  | int
+Línea 8   Columna 8   | CA                   | [
+Línea 8   Columna 9   | CC                   | ]
+Línea 8   Columna 11  | ID                   | numeros
+Línea 8   Columna 18  | PC                   | ;
+Línea 9   Columna 5   | INT                  | int
+Línea 9   Columna 8   | CA                   | [
+Línea 9   Columna 9   | CC                   | ]
+Línea 9   Columna 10  | CA                   | [
+Línea 9   Columna 11  | CC                   | ]
+Línea 9   Columna 13  | ID                   | matriz
+Línea 9   Columna 19  | PC                   | ;
+Línea 10  Columna 5   | ID                   | Contacto
+Línea 10  Columna 14  | ID                   | siguiente
+Línea 10  Columna 23  | PC                   | ;
+Línea 12  Columna 5   | PUBLIC               | public
+Línea 12  Columna 12  | ID                   | Contacto
+Línea 12  Columna 20  | PAREN_A              | (
+Línea 12  Columna 21  | STRING_T             | String
+Línea 12  Columna 28  | ID                   | nombreParametro
+Línea 12  Columna 43  | COMA                 | ,
+Línea 12  Columna 45  | INT                  | int
+Línea 12  Columna 49  | ID                   | edadParametro
+Línea 12  Columna 62  | PAREN_C              | )
+Línea 12  Columna 64  | LLA                  | {
+Línea 13  Columna 9   | ID                   | nombre
+Línea 13  Columna 16  | ASIG                 | =
+Línea 13  Columna 18  | ID                   | nombreParametro
+Línea 13  Columna 33  | PC                   | ;
+Línea 14  Columna 9   | ID                   | edad
+Línea 14  Columna 14  | ASIG                 | =
+Línea 14  Columna 16  | ID                   | edadParametro
+Línea 14  Columna 29  | PC                   | ;
+Línea 15  Columna 5   | LLC                  | }
+Línea 17  Columna 5   | PUBLIC               | public
+Línea 17  Columna 12  | ID                   | Contacto
+Línea 17  Columna 20  | PAREN_A              | (
+Línea 17  Columna 21  | PAREN_C              | )
+Línea 17  Columna 23  | LLA                  | {
+Línea 18  Columna 9   | ID                   | nombre
+Línea 18  Columna 16  | ASIG                 | =
+Línea 18  Columna 18  | STRING               | "Sin nombre"
+Línea 18  Columna 30  | PC                   | ;
+Línea 19  Columna 9   | ID                   | edad
+Línea 19  Columna 14  | ASIG                 | =
+Línea 19  Columna 16  | NUMERO_ENTERO        | 0
+Línea 19  Columna 17  | PC                   | ;
+Línea 20  Columna 5   | LLC                  | }
+Línea 22  Columna 5   | PUBLIC               | public
+Línea 22  Columna 12  | VOID                 | void
+Línea 22  Columna 17  | ID                   | saludar
+Línea 22  Columna 24  | PAREN_A              | (
+Línea 22  Columna 25  | PAREN_C              | )
+Línea 22  Columna 27  | LLA                  | {
+Línea 23  Columna 9   | PRINTLN              | println
+Línea 23  Columna 16  | PAREN_A              | (
+Línea 23  Columna 17  | STRING               | "Hola! Me llamo "
+Línea 23  Columna 35  | MAS                  | +
+Línea 23  Columna 37  | ID                   | nombre
+Línea 23  Columna 44  | MAS                  | +
+Línea 23  Columna 46  | STRING               | " y tengo "
+Línea 23  Columna 58  | MAS                  | +
+Línea 23  Columna 60  | ID                   | edad
+Línea 23  Columna 65  | MAS                  | +
+Línea 23  Columna 67  | STRING               | " anios."
+Línea 23  Columna 76  | PAREN_C              | )
+Línea 23  Columna 77  | PC                   | ;
+Línea 24  Columna 5   | LLC                  | }
+Línea 26  Columna 5   | PUBLIC               | public
+Línea 26  Columna 12  | INT                  | int
+Línea 26  Columna 16  | ID                   | calcularAnioNacimiento
+Línea 26  Columna 38  | PAREN_A              | (
+Línea 26  Columna 39  | INT                  | int
+Línea 26  Columna 43  | ID                   | anioActual
+Línea 26  Columna 53  | PAREN_C              | )
+Línea 26  Columna 55  | LLA                  | {
+Línea 27  Columna 9   | RETURN               | return
+Línea 27  Columna 16  | ID                   | anioActual
+Línea 27  Columna 27  | MENOS                | -
+Línea 27  Columna 29  | ID                   | edad
+Línea 27  Columna 33  | PC                   | ;
+Línea 28  Columna 5   | LLC                  | }
+Línea 30  Columna 5   | PUBLIC               | public
+Línea 30  Columna 12  | DOUBLE               | double
+Línea 30  Columna 19  | ID                   | promedioNotas
+Línea 30  Columna 32  | PAREN_A              | (
+Línea 30  Columna 33  | INT                  | int
+Línea 30  Columna 36  | CA                   | [
+Línea 30  Columna 37  | CC                   | ]
+Línea 30  Columna 39  | ID                   | notas
+Línea 30  Columna 44  | COMA                 | ,
+Línea 30  Columna 46  | INT                  | int
+Línea 30  Columna 50  | ID                   | n
+Línea 30  Columna 51  | PAREN_C              | )
+Línea 30  Columna 53  | LLA                  | {
+Línea 31  Columna 9   | DOUBLE               | double
+Línea 31  Columna 16  | ID                   | suma
+Línea 31  Columna 21  | ASIG                 | =
+Línea 31  Columna 23  | DECIMAL              | 0.0
+Línea 31  Columna 26  | PC                   | ;
+Línea 32  Columna 9   | INT                  | int
+Línea 32  Columna 13  | ID                   | i
+Línea 32  Columna 14  | PC                   | ;
+Línea 33  Columna 9   | FOR                  | for
+Línea 33  Columna 13  | PAREN_A              | (
+Línea 33  Columna 14  | ID                   | i
+Línea 33  Columna 16  | ASIG                 | =
+Línea 33  Columna 18  | NUMERO_ENTERO        | 0
+Línea 33  Columna 19  | PC                   | ;
+Línea 33  Columna 21  | ID                   | i
+Línea 33  Columna 23  | MENOR_QUE            | <
+Línea 33  Columna 25  | ID                   | n
+Línea 33  Columna 26  | PC                   | ;
+Línea 33  Columna 28  | ID                   | i
+Línea 33  Columna 29  | INCREMENTO           | ++
+Línea 33  Columna 31  | PAREN_C              | )
+Línea 33  Columna 33  | LLA                  | {
+Línea 34  Columna 13  | ID                   | suma
+Línea 34  Columna 18  | ASIG                 | =
+Línea 34  Columna 20  | ID                   | suma
+Línea 34  Columna 25  | MAS                  | +
+Línea 34  Columna 27  | ID                   | notas
+Línea 34  Columna 32  | CA                   | [
+Línea 34  Columna 33  | ID                   | i
+Línea 34  Columna 34  | CC                   | ]
+Línea 34  Columna 35  | PC                   | ;
+Línea 35  Columna 9   | LLC                  | }
+Línea 36  Columna 9   | RETURN               | return
+Línea 36  Columna 16  | ID                   | suma
+Línea 36  Columna 21  | DIVISION             | /
+Línea 36  Columna 23  | ID                   | n
+Línea 36  Columna 24  | PC                   | ;
+Línea 37  Columna 5   | LLC                  | }
+Línea 39  Columna 5   | PUBLIC               | public
+Línea 39  Columna 12  | BOOLEAN              | boolean
+Línea 39  Columna 20  | ID                   | esMayorDeEdad
+Línea 39  Columna 33  | PAREN_A              | (
+Línea 39  Columna 34  | PAREN_C              | )
+Línea 39  Columna 36  | LLA                  | {
+Línea 40  Columna 9   | RETURN               | return
+Línea 40  Columna 16  | ID                   | edad
+Línea 40  Columna 21  | MAYOR_IGUAL          | >=
+Línea 40  Columna 24  | NUMERO_ENTERO        | 18
+Línea 40  Columna 26  | PC                   | ;
+Línea 41  Columna 5   | LLC                  | }
+Línea 43  Columna 5   | PUBLIC               | public
+Línea 43  Columna 12  | INT                  | int
+Línea 43  Columna 16  | ID                   | operacionesAritmeticas
+Línea 43  Columna 38  | PAREN_A              | (
+Línea 43  Columna 39  | INT                  | int
+Línea 43  Columna 43  | ID                   | a
+Línea 43  Columna 44  | COMA                 | ,
+Línea 43  Columna 46  | INT                  | int
+Línea 43  Columna 50  | ID                   | b
+Línea 43  Columna 51  | PAREN_C              | )
+Línea 43  Columna 53  | LLA                  | {
+Línea 44  Columna 9   | INT                  | int
+Línea 44  Columna 13  | ID                   | suma
+Línea 44  Columna 18  | ASIG                 | =
+Línea 44  Columna 20  | ID                   | a
+Línea 44  Columna 22  | MAS                  | +
+Línea 44  Columna 24  | ID                   | b
+Línea 44  Columna 25  | PC                   | ;
+Línea 45  Columna 9   | INT                  | int
+Línea 45  Columna 13  | ID                   | resta
+Línea 45  Columna 19  | ASIG                 | =
+Línea 45  Columna 21  | ID                   | a
+Línea 45  Columna 23  | MENOS                | -
+Línea 45  Columna 25  | ID                   | b
+Línea 45  Columna 26  | PC                   | ;
+Línea 46  Columna 9   | INT                  | int
+Línea 46  Columna 13  | ID                   | multiplicacion
+Línea 46  Columna 28  | ASIG                 | =
+Línea 46  Columna 30  | ID                   | a
+Línea 46  Columna 32  | POR                  | *
+Línea 46  Columna 34  | ID                   | b
+Línea 46  Columna 35  | PC                   | ;
+Línea 47  Columna 9   | INT                  | int
+Línea 47  Columna 13  | ID                   | division
+Línea 47  Columna 22  | ASIG                 | =
+Línea 47  Columna 24  | ID                   | a
+Línea 47  Columna 26  | DIVISION             | /
+Línea 47  Columna 28  | ID                   | b
+Línea 47  Columna 29  | PC                   | ;
+Línea 48  Columna 9   | INT                  | int
+Línea 48  Columna 13  | ID                   | modulo
+Línea 48  Columna 20  | ASIG                 | =
+Línea 48  Columna 22  | ID                   | a
+Línea 48  Columna 24  | MODULO               | %
+Línea 48  Columna 26  | ID                   | b
+Línea 48  Columna 27  | PC                   | ;
+Línea 49  Columna 9   | RETURN               | return
+Línea 49  Columna 16  | ID                   | suma
+Línea 49  Columna 21  | MAS                  | +
+Línea 49  Columna 23  | ID                   | resta
+Línea 49  Columna 29  | MAS                  | +
+Línea 49  Columna 31  | ID                   | multiplicacion
+Línea 49  Columna 46  | MAS                  | +
+Línea 49  Columna 48  | ID                   | division
+Línea 49  Columna 57  | MAS                  | +
+Línea 49  Columna 59  | ID                   | modulo
+Línea 49  Columna 65  | PC                   | ;
+Línea 50  Columna 5   | LLC                  | }
+Línea 52  Columna 5   | PUBLIC               | public
+Línea 52  Columna 12  | VOID                 | void
+Línea 52  Columna 17  | ID                   | demoLogicas
+Línea 52  Columna 28  | PAREN_A              | (
+Línea 52  Columna 29  | INT                  | int
+Línea 52  Columna 33  | ID                   | a
+Línea 52  Columna 34  | COMA                 | ,
+Línea 52  Columna 36  | INT                  | int
+Línea 52  Columna 40  | ID                   | b
+Línea 52  Columna 41  | PAREN_C              | )
+Línea 52  Columna 43  | LLA                  | {
+Línea 53  Columna 9   | BOOLEAN              | boolean
+Línea 53  Columna 17  | ID                   | esMayor
+Línea 53  Columna 25  | ASIG                 | =
+Línea 53  Columna 27  | PAREN_A              | (
+Línea 53  Columna 28  | ID                   | a
+Línea 53  Columna 30  | MAYOR_QUE            | >
+Línea 53  Columna 32  | ID                   | b
+Línea 53  Columna 33  | PAREN_C              | )
+Línea 53  Columna 34  | PC                   | ;
+Línea 54  Columna 9   | BOOLEAN              | boolean
+Línea 54  Columna 17  | ID                   | esMenorIgual
+Línea 54  Columna 30  | ASIG                 | =
+Línea 54  Columna 32  | PAREN_A              | (
+Línea 54  Columna 33  | ID                   | a
+Línea 54  Columna 35  | MENOR_IGUAL          | <=
+Línea 54  Columna 38  | ID                   | b
+Línea 54  Columna 39  | PAREN_C              | )
+Línea 54  Columna 40  | PC                   | ;
+Línea 55  Columna 9   | BOOLEAN              | boolean
+Línea 55  Columna 17  | ID                   | esMayorIgual
+Línea 55  Columna 30  | ASIG                 | =
+Línea 55  Columna 32  | PAREN_A              | (
+Línea 55  Columna 33  | ID                   | a
+Línea 55  Columna 35  | MAYOR_IGUAL          | >=
+Línea 55  Columna 38  | ID                   | b
+Línea 55  Columna 39  | PAREN_C              | )
+Línea 55  Columna 40  | PC                   | ;
+Línea 56  Columna 9   | BOOLEAN              | boolean
+Línea 56  Columna 17  | ID                   | esIgual
+Línea 56  Columna 25  | ASIG                 | =
+Línea 56  Columna 27  | PAREN_A              | (
+Línea 56  Columna 28  | ID                   | a
+Línea 56  Columna 30  | IGUAL                | ==
+Línea 56  Columna 33  | ID                   | b
+Línea 56  Columna 34  | PAREN_C              | )
+Línea 56  Columna 35  | PC                   | ;
+Línea 57  Columna 9   | BOOLEAN              | boolean
+Línea 57  Columna 17  | ID                   | esDiferente
+Línea 57  Columna 29  | ASIG                 | =
+Línea 57  Columna 31  | PAREN_A              | (
+Línea 57  Columna 32  | ID                   | a
+Línea 57  Columna 34  | DIFERENTE            | !=
+Línea 57  Columna 37  | ID                   | b
+Línea 57  Columna 38  | PAREN_C              | )
+Línea 57  Columna 39  | PC                   | ;
+Línea 58  Columna 9   | BOOLEAN              | boolean
+Línea 58  Columna 17  | ID                   | condicionAnd
+Línea 58  Columna 30  | ASIG                 | =
+Línea 58  Columna 32  | PAREN_A              | (
+Línea 58  Columna 33  | ID                   | a
+Línea 58  Columna 35  | MAYOR_QUE            | >
+Línea 58  Columna 37  | NUMERO_ENTERO        | 5
+Línea 58  Columna 39  | AND                  | &&
+Línea 58  Columna 42  | ID                   | b
+Línea 58  Columna 44  | MENOR_QUE            | <
+Línea 58  Columna 46  | NUMERO_ENTERO        | 10
+Línea 58  Columna 48  | PAREN_C              | )
+Línea 58  Columna 49  | PC                   | ;
+Línea 59  Columna 9   | BOOLEAN              | boolean
+Línea 59  Columna 17  | ID                   | condicionOr
+Línea 59  Columna 29  | ASIG                 | =
+Línea 59  Columna 31  | PAREN_A              | (
+Línea 59  Columna 32  | ID                   | a
+Línea 59  Columna 34  | MAYOR_QUE            | >
+Línea 59  Columna 36  | NUMERO_ENTERO        | 20
+Línea 59  Columna 39  | OR                   | ||
+Línea 59  Columna 42  | ID                   | b
+Línea 59  Columna 44  | MAYOR_QUE            | >
+Línea 59  Columna 46  | NUMERO_ENTERO        | 0
+Línea 59  Columna 47  | PAREN_C              | )
+Línea 59  Columna 48  | PC                   | ;
+Línea 60  Columna 9   | BOOLEAN              | boolean
+Línea 60  Columna 17  | ID                   | condicionNot
+Línea 60  Columna 30  | ASIG                 | =
+Línea 60  Columna 32  | NEGACION             | !
+Línea 60  Columna 33  | PAREN_A              | (
+Línea 60  Columna 34  | ID                   | a
+Línea 60  Columna 36  | IGUAL                | ==
+Línea 60  Columna 39  | NUMERO_ENTERO        | 10
+Línea 60  Columna 41  | PAREN_C              | )
+Línea 60  Columna 42  | PC                   | ;
+Línea 61  Columna 5   | LLC                  | }
+Línea 63  Columna 5   | PUBLIC               | public
+Línea 63  Columna 12  | VOID                 | void
+Línea 63  Columna 17  | ID                   | demoUnarios
+Línea 63  Columna 28  | PAREN_A              | (
+Línea 63  Columna 29  | INT                  | int
+Línea 63  Columna 33  | ID                   | a
+Línea 63  Columna 34  | COMA                 | ,
+Línea 63  Columna 36  | BOOLEAN              | boolean
+Línea 63  Columna 44  | ID                   | bandera
+Línea 63  Columna 51  | PAREN_C              | )
+Línea 63  Columna 53  | LLA                  | {
+Línea 64  Columna 9   | INT                  | int
+Línea 64  Columna 13  | ID                   | negativo
+Línea 64  Columna 22  | ASIG                 | =
+Línea 64  Columna 24  | MENOS                | -
+Línea 64  Columna 25  | ID                   | a
+Línea 64  Columna 26  | PC                   | ;
+Línea 65  Columna 9   | INT                  | int
+Línea 65  Columna 13  | ID                   | positivo
+Línea 65  Columna 22  | ASIG                 | =
+Línea 65  Columna 24  | MAS                  | +
+Línea 65  Columna 25  | ID                   | a
+Línea 65  Columna 26  | PC                   | ;
+Línea 66  Columna 9   | BOOLEAN              | boolean
+Línea 66  Columna 17  | ID                   | invertido
+Línea 66  Columna 27  | ASIG                 | =
+Línea 66  Columna 29  | NEGACION             | !
+Línea 66  Columna 30  | ID                   | bandera
+Línea 66  Columna 37  | PC                   | ;
+Línea 67  Columna 5   | LLC                  | }
+Línea 69  Columna 5   | PUBLIC               | public
+Línea 69  Columna 12  | VOID                 | void
+Línea 69  Columna 17  | ID                   | demoAsignaciones
+Línea 69  Columna 33  | PAREN_A              | (
+Línea 69  Columna 34  | PAREN_C              | )
+Línea 69  Columna 36  | LLA                  | {
+Línea 70  Columna 9   | INT                  | int
+Línea 70  Columna 13  | ID                   | x
+Línea 70  Columna 15  | ASIG                 | =
+Línea 70  Columna 17  | NUMERO_ENTERO        | 5
+Línea 70  Columna 18  | PC                   | ;
+Línea 71  Columna 9   | ID                   | x
+Línea 71  Columna 11  | ASIG_SUMA            | +=
+Línea 71  Columna 14  | NUMERO_ENTERO        | 3
+Línea 71  Columna 15  | PC                   | ;
+Línea 72  Columna 9   | ID                   | x
+Línea 72  Columna 11  | ASIG_RESTA           | -=
+Línea 72  Columna 14  | NUMERO_ENTERO        | 2
+Línea 72  Columna 15  | PC                   | ;
+Línea 73  Columna 9   | ID                   | x
+Línea 73  Columna 11  | ASIG_MULT            | *=
+Línea 73  Columna 14  | NUMERO_ENTERO        | 2
+Línea 73  Columna 15  | PC                   | ;
+Línea 74  Columna 9   | ID                   | x
+Línea 74  Columna 10  | INCREMENTO           | ++
+Línea 74  Columna 12  | PC                   | ;
+Línea 75  Columna 9   | ID                   | x
+Línea 75  Columna 10  | DECREMENTO           | --
+Línea 75  Columna 12  | PC                   | ;
+Línea 76  Columna 5   | LLC                  | }
+Línea 78  Columna 5   | PUBLIC               | public
+Línea 78  Columna 12  | STRING_T             | String
+Línea 78  Columna 19  | ID                   | demoTernario
+Línea 78  Columna 31  | PAREN_A              | (
+Línea 78  Columna 32  | INT                  | int
+Línea 78  Columna 36  | ID                   | edad
+Línea 78  Columna 40  | PAREN_C              | )
+Línea 78  Columna 42  | LLA                  | {
+Línea 79  Columna 9   | STRING_T             | String
+Línea 79  Columna 16  | ID                   | mensaje
+Línea 79  Columna 24  | ASIG                 | =
+Línea 79  Columna 26  | PAREN_A              | (
+Línea 79  Columna 27  | ID                   | edad
+Línea 79  Columna 32  | MAYOR_IGUAL          | >=
+Línea 79  Columna 35  | NUMERO_ENTERO        | 18
+Línea 79  Columna 37  | PAREN_C              | )
+Línea 79  Columna 39  | INTERROGACION        | ?
+Línea 79  Columna 41  | STRING               | "Es mayor de edad"
+Línea 79  Columna 60  | DP                   | :
+Línea 79  Columna 62  | STRING               | "Es menor de edad"
+Línea 79  Columna 80  | PC                   | ;
+Línea 80  Columna 9   | RETURN               | return
+Línea 80  Columna 16  | ID                   | mensaje
+Línea 80  Columna 23  | PC                   | ;
+Línea 81  Columna 5   | LLC                  | }
+Línea 83  Columna 5   | PUBLIC               | public
+Línea 83  Columna 12  | VOID                 | void
+Línea 83  Columna 17  | ID                   | demoCondicionales
+Línea 83  Columna 34  | PAREN_A              | (
+Línea 83  Columna 35  | INT                  | int
+Línea 83  Columna 39  | ID                   | edad
+Línea 83  Columna 43  | COMA                 | ,
+Línea 83  Columna 45  | INT                  | int
+Línea 83  Columna 49  | ID                   | opcion
+Línea 83  Columna 55  | PAREN_C              | )
+Línea 83  Columna 57  | LLA                  | {
+Línea 84  Columna 9   | IF                   | if
+Línea 84  Columna 12  | PAREN_A              | (
+Línea 84  Columna 13  | ID                   | edad
+Línea 84  Columna 18  | MAYOR_QUE            | >
+Línea 84  Columna 20  | NUMERO_ENTERO        | 18
+Línea 84  Columna 22  | PAREN_C              | )
+Línea 84  Columna 24  | LLA                  | {
+Línea 85  Columna 13  | PRINTLN              | println
+Línea 85  Columna 20  | PAREN_A              | (
+Línea 85  Columna 21  | STRING               | "Es mayor de edad."
+Línea 85  Columna 40  | PAREN_C              | )
+Línea 85  Columna 41  | PC                   | ;
+Línea 86  Columna 9   | LLC                  | }
+Línea 86  Columna 11  | ELSE                 | else
+Línea 86  Columna 16  | IF                   | if
+Línea 86  Columna 19  | PAREN_A              | (
+Línea 86  Columna 20  | ID                   | edad
+Línea 86  Columna 25  | IGUAL                | ==
+Línea 86  Columna 28  | NUMERO_ENTERO        | 18
+Línea 86  Columna 30  | PAREN_C              | )
+Línea 86  Columna 32  | LLA                  | {
+Línea 87  Columna 13  | PRINTLN              | println
+Línea 87  Columna 20  | PAREN_A              | (
+Línea 87  Columna 21  | STRING               | "Justo tiene 18 anios!"
+Línea 87  Columna 44  | PAREN_C              | )
+Línea 87  Columna 45  | PC                   | ;
+Línea 88  Columna 9   | LLC                  | }
+Línea 88  Columna 11  | ELSE                 | else
+Línea 88  Columna 16  | LLA                  | {
+Línea 89  Columna 13  | PRINTLN              | println
+Línea 89  Columna 20  | PAREN_A              | (
+Línea 89  Columna 21  | STRING               | "Es menor de edad."
+Línea 89  Columna 40  | PAREN_C              | )
+Línea 89  Columna 41  | PC                   | ;
+Línea 90  Columna 9   | LLC                  | }
+Línea 92  Columna 9   | IF                   | if
+Línea 92  Columna 12  | PAREN_A              | (
+Línea 92  Columna 13  | ID                   | edad
+Línea 92  Columna 18  | MAYOR_IGUAL          | >=
+Línea 92  Columna 21  | NUMERO_ENTERO        | 18
+Línea 92  Columna 23  | PAREN_C              | )
+Línea 93  Columna 13  | PRINTLN              | println
+Línea 93  Columna 20  | PAREN_A              | (
+Línea 93  Columna 21  | STRING               | "Es adulto"
+Línea 93  Columna 32  | PAREN_C              | )
+Línea 93  Columna 33  | PC                   | ;
+Línea 94  Columna 9   | ELSE                 | else
+Línea 95  Columna 13  | PRINTLN              | println
+Línea 95  Columna 20  | PAREN_A              | (
+Línea 95  Columna 21  | STRING               | "Es menor"
+Línea 95  Columna 31  | PAREN_C              | )
+Línea 95  Columna 32  | PC                   | ;
+Línea 97  Columna 9   | IF                   | if
+Línea 97  Columna 12  | PAREN_A              | (
+Línea 97  Columna 13  | ID                   | edad
+Línea 97  Columna 18  | MAYOR_QUE            | >
+Línea 97  Columna 20  | NUMERO_ENTERO        | 0
+Línea 97  Columna 21  | PAREN_C              | )
+Línea 98  Columna 13  | IF                   | if
+Línea 98  Columna 16  | PAREN_A              | (
+Línea 98  Columna 17  | ID                   | opcion
+Línea 98  Columna 24  | IGUAL                | ==
+Línea 98  Columna 27  | NUMERO_ENTERO        | 1
+Línea 98  Columna 28  | PAREN_C              | )
+Línea 99  Columna 17  | PRINT                | print
+Línea 99  Columna 22  | PAREN_A              | (
+Línea 99  Columna 23  | STRING               | "anidado"
+Línea 99  Columna 32  | PAREN_C              | )
+Línea 99  Columna 33  | PC                   | ;
+Línea 101 Columna 9   | SWITCH               | switch
+Línea 101 Columna 16  | PAREN_A              | (
+Línea 101 Columna 17  | ID                   | opcion
+Línea 101 Columna 23  | PAREN_C              | )
+Línea 101 Columna 25  | LLA                  | {
+Línea 102 Columna 13  | CASE                 | case
+Línea 102 Columna 18  | NUMERO_ENTERO        | 1
+Línea 102 Columna 19  | DP                   | :
+Línea 103 Columna 17  | PRINTLN              | println
+Línea 103 Columna 24  | PAREN_A              | (
+Línea 103 Columna 25  | STRING               | "Opcion 1 seleccionada"
+Línea 103 Columna 48  | PAREN_C              | )
+Línea 103 Columna 49  | PC                   | ;
+Línea 104 Columna 17  | BREAK                | break
+Línea 104 Columna 22  | PC                   | ;
+Línea 105 Columna 13  | CASE                 | case
+Línea 105 Columna 18  | NUMERO_ENTERO        | 2
+Línea 105 Columna 19  | DP                   | :
+Línea 106 Columna 17  | PRINTLN              | println
+Línea 106 Columna 24  | PAREN_A              | (
+Línea 106 Columna 25  | STRING               | "Opcion 2 seleccionada"
+Línea 106 Columna 48  | PAREN_C              | )
+Línea 106 Columna 49  | PC                   | ;
+Línea 107 Columna 13  | DEFAULT              | default
+Línea 107 Columna 20  | DP                   | :
+Línea 108 Columna 17  | PRINTLN              | println
+Línea 108 Columna 24  | PAREN_A              | (
+Línea 108 Columna 25  | STRING               | "Opcion no valida"
+Línea 108 Columna 43  | PAREN_C              | )
+Línea 108 Columna 44  | PC                   | ;
+Línea 109 Columna 17  | BREAK                | break
+Línea 109 Columna 22  | PC                   | ;
+Línea 110 Columna 9   | LLC                  | }
+Línea 111 Columna 5   | LLC                  | }
+Línea 113 Columna 5   | PUBLIC               | public
+Línea 113 Columna 12  | VOID                 | void
+Línea 113 Columna 17  | ID                   | demoCiclos
+Línea 113 Columna 27  | PAREN_A              | (
+Línea 113 Columna 28  | PAREN_C              | )
+Línea 113 Columna 30  | LLA                  | {
+Línea 114 Columna 9   | FOR                  | for
+Línea 114 Columna 13  | PAREN_A              | (
+Línea 114 Columna 14  | INT                  | int
+Línea 114 Columna 18  | ID                   | i
+Línea 114 Columna 20  | ASIG                 | =
+Línea 114 Columna 22  | NUMERO_ENTERO        | 0
+Línea 114 Columna 23  | PC                   | ;
+Línea 114 Columna 25  | ID                   | i
+Línea 114 Columna 27  | MENOR_QUE            | <
+Línea 114 Columna 29  | NUMERO_ENTERO        | 5
+Línea 114 Columna 30  | PC                   | ;
+Línea 114 Columna 32  | ID                   | i
+Línea 114 Columna 33  | INCREMENTO           | ++
+Línea 114 Columna 35  | PAREN_C              | )
+Línea 114 Columna 37  | LLA                  | {
+Línea 115 Columna 13  | PRINTLN              | println
+Línea 115 Columna 20  | PAREN_A              | (
+Línea 115 Columna 21  | STRING               | "Iteracion numero: "
+Línea 115 Columna 42  | MAS                  | +
+Línea 115 Columna 44  | ID                   | i
+Línea 115 Columna 45  | PAREN_C              | )
+Línea 115 Columna 46  | PC                   | ;
+Línea 116 Columna 13  | IF                   | if
+Línea 116 Columna 16  | PAREN_A              | (
+Línea 116 Columna 17  | ID                   | i
+Línea 116 Columna 19  | IGUAL                | ==
+Línea 116 Columna 22  | NUMERO_ENTERO        | 2
+Línea 116 Columna 23  | PAREN_C              | )
+Línea 116 Columna 25  | LLA                  | {
+Línea 117 Columna 17  | CONTINUE             | continue
+Línea 117 Columna 25  | PC                   | ;
+Línea 118 Columna 13  | LLC                  | }
+Línea 119 Columna 13  | IF                   | if
+Línea 119 Columna 16  | PAREN_A              | (
+Línea 119 Columna 17  | ID                   | i
+Línea 119 Columna 19  | IGUAL                | ==
+Línea 119 Columna 22  | NUMERO_ENTERO        | 4
+Línea 119 Columna 23  | PAREN_C              | )
+Línea 119 Columna 25  | LLA                  | {
+Línea 120 Columna 17  | BREAK                | break
+Línea 120 Columna 22  | PC                   | ;
+Línea 121 Columna 13  | LLC                  | }
+Línea 122 Columna 9   | LLC                  | }
+Línea 124 Columna 9   | FOR                  | for
+Línea 124 Columna 13  | PAREN_A              | (
+Línea 124 Columna 14  | PC                   | ;
+Línea 124 Columna 15  | PC                   | ;
+Línea 124 Columna 16  | PAREN_C              | )
+Línea 124 Columna 18  | LLA                  | {
+Línea 125 Columna 13  | PRINTLN              | println
+Línea 125 Columna 20  | PAREN_A              | (
+Línea 125 Columna 21  | STRING               | "Este bucle nunca termina a menos que use un break..."
+Línea 125 Columna 75  | PAREN_C              | )
+Línea 125 Columna 76  | PC                   | ;
+Línea 126 Columna 13  | BREAK                | break
+Línea 126 Columna 18  | PC                   | ;
+Línea 127 Columna 9   | LLC                  | }
+Línea 129 Columna 9   | INT                  | int
+Línea 129 Columna 13  | ID                   | contador
+Línea 129 Columna 22  | ASIG                 | =
+Línea 129 Columna 24  | NUMERO_ENTERO        | 0
+Línea 129 Columna 25  | PC                   | ;
+Línea 130 Columna 9   | WHILE                | while
+Línea 130 Columna 15  | PAREN_A              | (
+Línea 130 Columna 16  | ID                   | contador
+Línea 130 Columna 25  | MENOR_QUE            | <
+Línea 130 Columna 27  | NUMERO_ENTERO        | 3
+Línea 130 Columna 28  | PAREN_C              | )
+Línea 130 Columna 30  | LLA                  | {
+Línea 131 Columna 13  | PRINTLN              | println
+Línea 131 Columna 20  | PAREN_A              | (
+Línea 131 Columna 21  | STRING               | "Contador while: "
+Línea 131 Columna 40  | MAS                  | +
+Línea 131 Columna 42  | ID                   | contador
+Línea 131 Columna 50  | PAREN_C              | )
+Línea 131 Columna 51  | PC                   | ;
+Línea 132 Columna 13  | ID                   | contador
+Línea 132 Columna 21  | INCREMENTO           | ++
+Línea 132 Columna 23  | PC                   | ;
+Línea 133 Columna 13  | IF                   | if
+Línea 133 Columna 16  | PAREN_A              | (
+Línea 133 Columna 17  | ID                   | contador
+Línea 133 Columna 26  | IGUAL                | ==
+Línea 133 Columna 29  | NUMERO_ENTERO        | 1
+Línea 133 Columna 30  | PAREN_C              | )
+Línea 133 Columna 32  | LLA                  | {
+Línea 134 Columna 17  | CONTINUE             | continue
+Línea 134 Columna 25  | PC                   | ;
+Línea 135 Columna 13  | LLC                  | }
+Línea 136 Columna 9   | LLC                  | }
+Línea 138 Columna 9   | INT                  | int
+Línea 138 Columna 13  | ID                   | intentos
+Línea 138 Columna 22  | ASIG                 | =
+Línea 138 Columna 24  | NUMERO_ENTERO        | 0
+Línea 138 Columna 25  | PC                   | ;
+Línea 139 Columna 9   | DO                   | do
+Línea 139 Columna 12  | LLA                  | {
+Línea 140 Columna 13  | ID                   | intentos
+Línea 140 Columna 21  | INCREMENTO           | ++
+Línea 140 Columna 23  | PC                   | ;
+Línea 141 Columna 13  | PRINTLN              | println
+Línea 141 Columna 20  | PAREN_A              | (
+Línea 141 Columna 21  | STRING               | "Intento numero: "
+Línea 141 Columna 40  | MAS                  | +
+Línea 141 Columna 42  | ID                   | intentos
+Línea 141 Columna 50  | PAREN_C              | )
+Línea 141 Columna 51  | PC                   | ;
+Línea 142 Columna 13  | IF                   | if
+Línea 142 Columna 16  | PAREN_A              | (
+Línea 142 Columna 17  | ID                   | intentos
+Línea 142 Columna 26  | IGUAL                | ==
+Línea 142 Columna 29  | NUMERO_ENTERO        | 2
+Línea 142 Columna 30  | PAREN_C              | )
+Línea 142 Columna 32  | LLA                  | {
+Línea 143 Columna 17  | BREAK                | break
+Línea 143 Columna 22  | PC                   | ;
+Línea 144 Columna 13  | LLC                  | }
+Línea 145 Columna 9   | LLC                  | }
+Línea 145 Columna 11  | WHILE                | while
+Línea 145 Columna 17  | PAREN_A              | (
+Línea 145 Columna 18  | ID                   | intentos
+Línea 145 Columna 27  | MENOR_QUE            | <
+Línea 145 Columna 29  | NUMERO_ENTERO        | 5
+Línea 145 Columna 30  | PAREN_C              | )
+Línea 145 Columna 31  | PC                   | ;
+Línea 147 Columna 9   | LLA                  | {
+Línea 148 Columna 13  | INT                  | int
+Línea 148 Columna 17  | ID                   | temp
+Línea 148 Columna 22  | ASIG                 | =
+Línea 148 Columna 24  | NUMERO_ENTERO        | 5
+Línea 148 Columna 25  | PC                   | ;
+Línea 149 Columna 13  | PRINTLN              | println
+Línea 149 Columna 20  | PAREN_A              | (
+Línea 149 Columna 21  | ID                   | temp
+Línea 149 Columna 25  | PAREN_C              | )
+Línea 149 Columna 26  | PC                   | ;
+Línea 150 Columna 9   | LLC                  | }
+Línea 151 Columna 5   | LLC                  | }
+Línea 153 Columna 5   | PUBLIC               | public
+Línea 153 Columna 12  | VOID                 | void
+Línea 153 Columna 17  | ID                   | demoArreglosYObjetos
+Línea 153 Columna 37  | PAREN_A              | (
+Línea 153 Columna 38  | PAREN_C              | )
+Línea 153 Columna 40  | LLA                  | {
+Línea 154 Columna 9   | INT                  | int
+Línea 154 Columna 12  | CA                   | [
+Línea 154 Columna 13  | CC                   | ]
+Línea 154 Columna 15  | ID                   | valores
+Línea 154 Columna 23  | ASIG                 | =
+Línea 154 Columna 25  | NEW                  | new
+Línea 154 Columna 29  | INT                  | int
+Línea 154 Columna 32  | CA                   | [
+Línea 154 Columna 33  | NUMERO_ENTERO        | 5
+Línea 154 Columna 34  | CC                   | ]
+Línea 154 Columna 35  | PC                   | ;
+Línea 155 Columna 9   | INT                  | int
+Línea 155 Columna 12  | CA                   | [
+Línea 155 Columna 13  | CC                   | ]
+Línea 155 Columna 14  | CA                   | [
+Línea 155 Columna 15  | CC                   | ]
+Línea 155 Columna 17  | ID                   | tabla
+Línea 155 Columna 23  | ASIG                 | =
+Línea 155 Columna 25  | NEW                  | new
+Línea 155 Columna 29  | INT                  | int
+Línea 155 Columna 32  | CA                   | [
+Línea 155 Columna 33  | NUMERO_ENTERO        | 3
+Línea 155 Columna 34  | CC                   | ]
+Línea 155 Columna 35  | CA                   | [
+Línea 155 Columna 36  | NUMERO_ENTERO        | 3
+Línea 155 Columna 37  | CC                   | ]
+Línea 155 Columna 38  | PC                   | ;
+Línea 156 Columna 9   | INT                  | int
+Línea 156 Columna 12  | CA                   | [
+Línea 156 Columna 13  | CC                   | ]
+Línea 156 Columna 15  | ID                   | valoresIniciales
+Línea 156 Columna 32  | ASIG                 | =
+Línea 156 Columna 34  | LLA                  | {
+Línea 156 Columna 35  | NUMERO_ENTERO        | 1
+Línea 156 Columna 36  | COMA                 | ,
+Línea 156 Columna 38  | NUMERO_ENTERO        | 2
+Línea 156 Columna 39  | COMA                 | ,
+Línea 156 Columna 41  | NUMERO_ENTERO        | 3
+Línea 156 Columna 42  | COMA                 | ,
+Línea 156 Columna 44  | NUMERO_ENTERO        | 4
+Línea 156 Columna 45  | COMA                 | ,
+Línea 156 Columna 47  | NUMERO_ENTERO        | 5
+Línea 156 Columna 48  | LLC                  | }
+Línea 156 Columna 49  | PC                   | ;
+Línea 157 Columna 9   | INT                  | int
+Línea 157 Columna 12  | CA                   | [
+Línea 157 Columna 13  | CC                   | ]
+Línea 157 Columna 15  | ID                   | vacio
+Línea 157 Columna 21  | ASIG                 | =
+Línea 157 Columna 23  | LLA                  | {
+Línea 157 Columna 24  | LLC                  | }
+Línea 157 Columna 25  | PC                   | ;
+Línea 158 Columna 9   | STRING_T             | String
+Línea 158 Columna 15  | CA                   | [
+Línea 158 Columna 16  | CC                   | ]
+Línea 158 Columna 18  | ID                   | nombres
+Línea 158 Columna 26  | ASIG                 | =
+Línea 158 Columna 28  | LLA                  | {
+Línea 158 Columna 29  | STRING               | "Carlos"
+Línea 158 Columna 37  | COMA                 | ,
+Línea 158 Columna 39  | STRING               | "Ana"
+Línea 158 Columna 44  | COMA                 | ,
+Línea 158 Columna 46  | STRING               | "Pedro"
+Línea 158 Columna 53  | LLC                  | }
+Línea 158 Columna 54  | PC                   | ;
+Línea 159 Columna 9   | ID                   | valores
+Línea 159 Columna 16  | CA                   | [
+Línea 159 Columna 17  | NUMERO_ENTERO        | 0
+Línea 159 Columna 18  | CC                   | ]
+Línea 159 Columna 20  | ASIG                 | =
+Línea 159 Columna 22  | NUMERO_ENTERO        | 10
+Línea 159 Columna 24  | PC                   | ;
+Línea 160 Columna 9   | ID                   | valores
+Línea 160 Columna 16  | CA                   | [
+Línea 160 Columna 17  | NUMERO_ENTERO        | 1
+Línea 160 Columna 18  | CC                   | ]
+Línea 160 Columna 20  | ASIG                 | =
+Línea 160 Columna 22  | ID                   | valores
+Línea 160 Columna 29  | CA                   | [
+Línea 160 Columna 30  | NUMERO_ENTERO        | 0
+Línea 160 Columna 31  | CC                   | ]
+Línea 160 Columna 33  | POR                  | *
+Línea 160 Columna 35  | NUMERO_ENTERO        | 3
+Línea 160 Columna 36  | PC                   | ;
+Línea 162 Columna 9   | ID                   | Contacto
+Línea 162 Columna 18  | ID                   | amigo
+Línea 162 Columna 24  | ASIG                 | =
+Línea 162 Columna 26  | NEW                  | new
+Línea 162 Columna 30  | ID                   | Contacto
+Línea 162 Columna 38  | PAREN_A              | (
+Línea 162 Columna 39  | STRING               | "Ana"
+Línea 162 Columna 44  | COMA                 | ,
+Línea 162 Columna 46  | NUMERO_ENTERO        | 30
+Línea 162 Columna 48  | PAREN_C              | )
+Línea 162 Columna 49  | PC                   | ;
+Línea 163 Columna 9   | ID                   | Contacto
+Línea 163 Columna 18  | ID                   | vacioObjeto
+Línea 163 Columna 30  | ASIG                 | =
+Línea 163 Columna 32  | NEW                  | new
+Línea 163 Columna 36  | ID                   | Contacto
+Línea 163 Columna 44  | PAREN_A              | (
+Línea 163 Columna 45  | PAREN_C              | )
+Línea 163 Columna 46  | PC                   | ;
+Línea 164 Columna 9   | ID                   | Contacto
+Línea 164 Columna 18  | ID                   | copia
+Línea 164 Columna 24  | ASIG                 | =
+Línea 164 Columna 26  | NEW                  | new
+Línea 164 Columna 30  | ID                   | Contacto
+Línea 164 Columna 38  | PAREN_A              | (
+Línea 164 Columna 39  | ID                   | amigo
+Línea 164 Columna 44  | PUNTO                | .
+Línea 164 Columna 45  | ID                   | nombre
+Línea 164 Columna 51  | COMA                 | ,
+Línea 164 Columna 53  | ID                   | amigo
+Línea 164 Columna 58  | PUNTO                | .
+Línea 164 Columna 59  | ID                   | edad
+Línea 164 Columna 63  | PAREN_C              | )
+Línea 164 Columna 64  | PC                   | ;
+Línea 166 Columna 9   | IF                   | if
+Línea 166 Columna 12  | PAREN_A              | (
+Línea 166 Columna 13  | ID                   | amigo
+Línea 166 Columna 19  | IGUAL                | ==
+Línea 166 Columna 22  | NULL                 | null
+Línea 166 Columna 26  | PAREN_C              | )
+Línea 166 Columna 28  | LLA                  | {
+Línea 167 Columna 13  | PRINT                | print
+Línea 167 Columna 18  | PAREN_A              | (
+Línea 167 Columna 19  | STRING               | "Es posible comparar si un objeto es nulo"
+Línea 167 Columna 61  | PAREN_C              | )
+Línea 167 Columna 62  | PC                   | ;
+Línea 168 Columna 9   | LLC                  | }
+Línea 170 Columna 9   | ID                   | Contacto
+Línea 170 Columna 18  | ID                   | otro
+Línea 170 Columna 23  | ASIG                 | =
+Línea 170 Columna 25  | NULL                 | null
+Línea 170 Columna 29  | PC                   | ;
+Línea 171 Columna 5   | LLC                  | }
+Línea 173 Columna 5   | PUBLIC               | public
+Línea 173 Columna 12  | VOID                 | void
+Línea 173 Columna 17  | ID                   | demoLectura
+Línea 173 Columna 28  | PAREN_A              | (
+Línea 173 Columna 29  | PAREN_C              | )
+Línea 173 Columna 31  | LLA                  | {
+Línea 174 Columna 9   | READLN               | readln
+Línea 174 Columna 15  | PAREN_A              | (
+Línea 174 Columna 16  | PAREN_C              | )
+Línea 174 Columna 17  | PC                   | ;
+Línea 175 Columna 9   | STRING_T             | String
+Línea 175 Columna 16  | ID                   | entrada
+Línea 175 Columna 23  | PC                   | ;
+Línea 176 Columna 9   | ID                   | entrada
+Línea 176 Columna 17  | ASIG                 | =
+Línea 176 Columna 19  | READLN               | readln
+Línea 176 Columna 25  | PAREN_A              | (
+Línea 176 Columna 26  | PAREN_C              | )
+Línea 176 Columna 27  | PC                   | ;
+Línea 177 Columna 9   | PRINTLN              | println
+Línea 177 Columna 16  | PAREN_A              | (
+Línea 177 Columna 17  | ID                   | entrada
+Línea 177 Columna 24  | PAREN_C              | )
+Línea 177 Columna 25  | PC                   | ;
+Línea 178 Columna 5   | LLC                  | }
+Línea 180 Columna 5   | PUBLIC               | public
+Línea 180 Columna 12  | INT                  | int
+Línea 180 Columna 16  | ID                   | demoExpresionCompleja
+Línea 180 Columna 37  | PAREN_A              | (
+Línea 180 Columna 38  | INT                  | int
+Línea 180 Columna 42  | ID                   | a
+Línea 180 Columna 43  | COMA                 | ,
+Línea 180 Columna 45  | INT                  | int
+Línea 180 Columna 49  | ID                   | b
+Línea 180 Columna 50  | COMA                 | ,
+Línea 180 Columna 52  | INT                  | int
+Línea 180 Columna 56  | ID                   | c
+Línea 180 Columna 57  | PAREN_C              | )
+Línea 180 Columna 59  | LLA                  | {
+Línea 181 Columna 9   | INT                  | int
+Línea 181 Columna 13  | ID                   | resultado
+Línea 181 Columna 23  | ASIG                 | =
+Línea 181 Columna 25  | PAREN_A              | (
+Línea 181 Columna 26  | ID                   | a
+Línea 181 Columna 28  | MAS                  | +
+Línea 181 Columna 30  | ID                   | b
+Línea 181 Columna 31  | PAREN_C              | )
+Línea 181 Columna 33  | POR                  | *
+Línea 181 Columna 35  | ID                   | c
+Línea 181 Columna 37  | MENOS                | -
+Línea 181 Columna 39  | PAREN_A              | (
+Línea 181 Columna 40  | ID                   | a
+Línea 181 Columna 42  | MODULO               | %
+Línea 181 Columna 44  | ID                   | b
+Línea 181 Columna 45  | PAREN_C              | )
+Línea 181 Columna 47  | DIVISION             | /
+Línea 181 Columna 49  | NUMERO_ENTERO        | 2
+Línea 181 Columna 50  | PC                   | ;
+Línea 182 Columna 9   | RETURN               | return
+Línea 182 Columna 16  | ID                   | resultado
+Línea 182 Columna 25  | PC                   | ;
+Línea 183 Columna 5   | LLC                  | }
+Línea 184 Columna 1   | LLC                  | }
+----- TOKENS PIG -----
+Línea 1   Columna 1   | IMPORT               | import
+Línea 1   Columna 8   | ID                   | carpeta
+Línea 1   Columna 15  | PUNTO                | .
+Línea 1   Columna 16  | ID                   | Objeto1
+Línea 1   Columna 23  | PUNTO                | .
+Línea 1   Columna 24  | ID                   | z
+Línea 2   Columna 1   | IMPORT               | import
+Línea 2   Columna 8   | ID                   | carpeta
+Línea 2   Columna 15  | PUNTO                | .
+Línea 2   Columna 16  | ID                   | Funciones
+Línea 2   Columna 25  | PUNTO                | .
+Línea 2   Columna 26  | ID                   | y
+Línea 9   Columna 1   | SECCION_VARIABLES    | VARIABILES
+Línea 9   Columna 11  | MAYOR_QUE            | >
+Línea 10  Columna 1   | ESTO                 | esto
+Línea 10  Columna 6   | ID                   | edad
+Línea 10  Columna 11  | DP                   | :
+Línea 10  Columna 13  | NUMERUS              | numerus
+Línea 10  Columna 21  | NUMERO_ENTERO        | 20
+Línea 10  Columna 23  | PC                   | ;
+Línea 11  Columna 1   | ESTO                 | esto
+Línea 11  Columna 6   | ID                   | cifrado
+Línea 11  Columna 14  | DP                   | :
+Línea 11  Columna 16  | BOOL                 | bool
+Línea 11  Columna 21  | FALSUS               | falsus
+Línea 11  Columna 27  | PC                   | ;
+Línea 12  Columna 1   | ESTO                 | esto
+Línea 12  Columna 6   | ID                   | comandante
+Línea 12  Columna 17  | DP                   | :
+Línea 12  Columna 19  | TEXTUM               | textum
+Línea 12  Columna 26  | STRING               | "Estudiante X"
+Línea 12  Columna 40  | PC                   | ;
+Línea 13  Columna 1   | ESTO                 | esto
+Línea 13  Columna 6   | ID                   | fuerza
+Línea 13  Columna 13  | DP                   | :
+Línea 13  Columna 15  | NUMERUS              | numerus
+Línea 13  Columna 23  | NUMERO_ENTERO        | 10
+Línea 13  Columna 25  | PC                   | ;
+Línea 14  Columna 1   | ESTO                 | esto
+Línea 14  Columna 6   | ID                   | poder
+Línea 14  Columna 12  | DP                   | :
+Línea 14  Columna 14  | NUMERUS              | numerus
+Línea 14  Columna 22  | NUMERO_ENTERO        | 0
+Línea 14  Columna 23  | PC                   | ;
+Línea 15  Columna 1   | ESTO                 | esto
+Línea 15  Columna 6   | ID                   | gravedad
+Línea 15  Columna 15  | DP                   | :
+Línea 15  Columna 17  | DECIMALIS            | decimalis
+Línea 15  Columna 27  | DECIMAL              | 9.81
+Línea 15  Columna 31  | PC                   | ;
+Línea 16  Columna 1   | ESTO                 | esto
+Línea 16  Columna 6   | ID                   | inicial
+Línea 16  Columna 14  | DP                   | :
+Línea 16  Columna 16  | LITTERA              | littera
+Línea 16  Columna 24  | CHAR                 | 'a'
+Línea 16  Columna 27  | PC                   | ;
+Línea 17  Columna 1   | ESTO                 | esto
+Línea 17  Columna 6   | ID                   | activo
+Línea 17  Columna 13  | DP                   | :
+Línea 17  Columna 15  | BOOL                 | bool
+Línea 17  Columna 20  | VERUM                | verum
+Línea 17  Columna 25  | PC                   | ;
+Línea 18  Columna 1   | SERIES               | series
+Línea 18  Columna 8   | ID                   | mis_enteros
+Línea 18  Columna 19  | CA                   | [
+Línea 18  Columna 20  | NUMERO_ENTERO        | 3
+Línea 18  Columna 21  | CC                   | ]
+Línea 18  Columna 23  | DP                   | :
+Línea 18  Columna 25  | NUMERUS              | numerus
+Línea 18  Columna 33  | LLA                  | {
+Línea 18  Columna 34  | NUMERO_ENTERO        | 1
+Línea 18  Columna 35  | COMA                 | ,
+Línea 18  Columna 37  | NUMERO_ENTERO        | 1
+Línea 18  Columna 38  | COMA                 | ,
+Línea 18  Columna 40  | NUMERO_ENTERO        | 1
+Línea 18  Columna 41  | LLC                  | }
+Línea 18  Columna 42  | PC                   | ;
+Línea 19  Columna 1   | SERIES               | series
+Línea 19  Columna 8   | ID                   | mis_enteros_
+Línea 19  Columna 20  | CA                   | [
+Línea 19  Columna 21  | NUMERO_ENTERO        | 3
+Línea 19  Columna 22  | CC                   | ]
+Línea 19  Columna 24  | DP                   | :
+Línea 19  Columna 26  | NUMERUS              | numerus
+Línea 19  Columna 33  | PC                   | ;
+Línea 20  Columna 1   | SERIES               | series
+Línea 20  Columna 8   | ID                   | nombres
+Línea 20  Columna 15  | CA                   | [
+Línea 20  Columna 16  | NUMERO_ENTERO        | 2
+Línea 20  Columna 17  | CC                   | ]
+Línea 20  Columna 19  | DP                   | :
+Línea 20  Columna 21  | TEXTUM               | textum
+Línea 20  Columna 28  | LLA                  | {
+Línea 20  Columna 29  | STRING               | "Hola"
+Línea 20  Columna 35  | COMA                 | ,
+Línea 20  Columna 37  | STRING               | "Adios"
+Línea 20  Columna 44  | LLC                  | }
+Línea 20  Columna 45  | PC                   | ;
+Línea 21  Columna 1   | SERIES               | series
+Línea 21  Columna 8   | ID                   | matriz
+Línea 21  Columna 14  | CA                   | [
+Línea 21  Columna 15  | NUMERO_ENTERO        | 2
+Línea 21  Columna 16  | CC                   | ]
+Línea 21  Columna 17  | CA                   | [
+Línea 21  Columna 18  | NUMERO_ENTERO        | 2
+Línea 21  Columna 19  | CC                   | ]
+Línea 21  Columna 21  | DP                   | :
+Línea 21  Columna 23  | NUMERUS              | numerus
+Línea 21  Columna 31  | LLA                  | {
+Línea 21  Columna 32  | LLA                  | {
+Línea 21  Columna 33  | NUMERO_ENTERO        | 1
+Línea 21  Columna 34  | COMA                 | ,
+Línea 21  Columna 36  | NUMERO_ENTERO        | 2
+Línea 21  Columna 37  | LLC                  | }
+Línea 21  Columna 38  | COMA                 | ,
+Línea 21  Columna 40  | LLA                  | {
+Línea 21  Columna 41  | NUMERO_ENTERO        | 3
+Línea 21  Columna 42  | COMA                 | ,
+Línea 21  Columna 44  | NUMERO_ENTERO        | 4
+Línea 21  Columna 45  | LLC                  | }
+Línea 21  Columna 46  | LLC                  | }
+Línea 21  Columna 47  | PC                   | ;
+Línea 22  Columna 1   | SERIES               | series
+Línea 22  Columna 8   | ID                   | misObjetos
+Línea 22  Columna 18  | CA                   | [
+Línea 22  Columna 19  | NUMERO_ENTERO        | 10
+Línea 22  Columna 21  | CC                   | ]
+Línea 22  Columna 23  | DP                   | :
+Línea 22  Columna 25  | ID                   | Persona
+Línea 22  Columna 32  | PC                   | ;
+Línea 23  Columna 1   | ESTO                 | esto
+Línea 23  Columna 6   | ID                   | miObjeto
+Línea 23  Columna 15  | DP                   | :
+Línea 23  Columna 17  | ID                   | Persona
+Línea 23  Columna 25  | NOVUS                | novus
+Línea 23  Columna 31  | ID                   | Persona
+Línea 23  Columna 38  | PAREN_A              | (
+Línea 23  Columna 39  | NUMERO_ENTERO        | 12
+Línea 23  Columna 41  | COMA                 | ,
+Línea 23  Columna 43  | STRING               | "Profesor"
+Línea 23  Columna 53  | PAREN_C              | )
+Línea 23  Columna 54  | PC                   | ;
+Línea 24  Columna 1   | ESTO                 | esto
+Línea 24  Columna 6   | ID                   | otroObjeto
+Línea 24  Columna 17  | DP                   | :
+Línea 24  Columna 19  | ID                   | Persona
+Línea 24  Columna 27  | NOVUS                | novus
+Línea 24  Columna 33  | ID                   | Persona
+Línea 24  Columna 40  | PAREN_A              | (
+Línea 24  Columna 41  | NUMERO_ENTERO        | 12
+Línea 24  Columna 43  | COMA                 | ,
+Línea 24  Columna 45  | ID                   | miObjeto
+Línea 24  Columna 53  | COMA                 | ,
+Línea 24  Columna 55  | NOVUS                | novus
+Línea 24  Columna 61  | ID                   | Persona
+Línea 24  Columna 68  | PAREN_A              | (
+Línea 24  Columna 69  | PAREN_C              | )
+Línea 24  Columna 70  | PAREN_C              | )
+Línea 24  Columna 71  | PC                   | ;
+Línea 26  Columna 1   | SECCION_MAIOR        | MAIOR
+Línea 26  Columna 6   | MAYOR_QUE            | >
+Línea 27  Columna 1   | PRINT                | >>
+Línea 27  Columna 4   | STRING               | "Hola comandante!"
+Línea 27  Columna 23  | PC                   | ;
+Línea 28  Columna 1   | PRINT                | >>
+Línea 28  Columna 4   | STRING               | "Ingresa tu nombre por favor"
+Línea 28  Columna 34  | PC                   | ;
+Línea 29  Columna 1   | ID                   | comandante
+Línea 29  Columna 12  | LEER                 | <<
+Línea 29  Columna 15  | PC                   | ;
+Línea 30  Columna 1   | PRINT                | >>
+Línea 30  Columna 4   | STRING               | "Bienvenido"
+Línea 30  Columna 17  | PRINT                | >>
+Línea 30  Columna 20  | ID                   | comandante
+Línea 30  Columna 31  | PC                   | ;
+Línea 31  Columna 1   | PRINT                | >>
+Línea 31  Columna 4   | STRING               | "Ingresa tu edad"
+Línea 31  Columna 22  | PC                   | ;
+Línea 32  Columna 1   | ID                   | edad
+Línea 32  Columna 6   | LEER                 | <<
+Línea 32  Columna 9   | PC                   | ;
+Línea 34  Columna 1   | SI                   | si
+Línea 34  Columna 4   | PAREN_A              | (
+Línea 34  Columna 5   | ID                   | edad
+Línea 34  Columna 10  | MAYOR_IGUAL          | >=
+Línea 34  Columna 13  | NUMERO_ENTERO        | 18
+Línea 34  Columna 15  | PAREN_C              | )
+Línea 34  Columna 17  | LLA                  | {
+Línea 35  Columna 5   | ID                   | cifrado
+Línea 35  Columna 13  | ASIG                 | =
+Línea 35  Columna 15  | VERUM                | verum
+Línea 35  Columna 20  | PC                   | ;
+Línea 36  Columna 5   | ID                   | fuerza
+Línea 36  Columna 12  | ASIG                 | =
+Línea 36  Columna 14  | NUMERO_ENTERO        | 12
+Línea 36  Columna 16  | PC                   | ;
+Línea 37  Columna 1   | LLC                  | }
+Línea 37  Columna 3   | FIN_BLOQUE           | finis
+Línea 37  Columna 9   | PC                   | ;
+Línea 39  Columna 1   | SI                   | si
+Línea 39  Columna 4   | PAREN_A              | (
+Línea 39  Columna 5   | ID                   | edad
+Línea 39  Columna 10  | MAYOR_IGUAL          | >=
+Línea 39  Columna 13  | NUMERO_ENTERO        | 18
+Línea 39  Columna 15  | PAREN_C              | )
+Línea 39  Columna 17  | LLA                  | {
+Línea 40  Columna 5   | ID                   | cifrado
+Línea 40  Columna 13  | ASIG                 | =
+Línea 40  Columna 15  | VERUM                | verum
+Línea 40  Columna 20  | PC                   | ;
+Línea 41  Columna 1   | LLC                  | }
+Línea 41  Columna 3   | ALITER               | aliter
+Línea 41  Columna 10  | LLA                  | {
+Línea 42  Columna 5   | ID                   | cifrado
+Línea 42  Columna 13  | ASIG                 | =
+Línea 42  Columna 15  | FALSUS               | falsus
+Línea 42  Columna 21  | PC                   | ;
+Línea 43  Columna 1   | LLC                  | }
+Línea 43  Columna 3   | FIN_BLOQUE           | finis
+Línea 43  Columna 9   | PC                   | ;
+Línea 45  Columna 1   | SI                   | si
+Línea 45  Columna 4   | PAREN_A              | (
+Línea 45  Columna 5   | ID                   | edad
+Línea 45  Columna 10  | MAYOR_QUE            | >
+Línea 45  Columna 12  | NUMERO_ENTERO        | 10
+Línea 45  Columna 15  | AND                  | &&
+Línea 45  Columna 18  | ID                   | edad
+Línea 45  Columna 23  | MENOR_QUE            | <
+Línea 45  Columna 25  | NUMERO_ENTERO        | 20
+Línea 45  Columna 27  | PAREN_C              | )
+Línea 45  Columna 29  | LLA                  | {
+Línea 46  Columna 5   | ID                   | poder
+Línea 46  Columna 11  | ASIG                 | =
+Línea 46  Columna 13  | NUMERO_ENTERO        | 1
+Línea 46  Columna 14  | PC                   | ;
+Línea 47  Columna 1   | LLC                  | }
+Línea 47  Columna 3   | ALITER               | aliter
+Línea 47  Columna 10  | PAREN_A              | (
+Línea 47  Columna 11  | ID                   | edad
+Línea 47  Columna 16  | ASIG                 | =
+Línea 47  Columna 18  | NUMERO_ENTERO        | 18
+Línea 47  Columna 20  | PAREN_C              | )
+Línea 47  Columna 22  | LLA                  | {
+Línea 48  Columna 5   | ID                   | poder
+Línea 48  Columna 11  | ASIG                 | =
+Línea 48  Columna 13  | NUMERO_ENTERO        | 2
+Línea 48  Columna 14  | PC                   | ;
+Línea 49  Columna 1   | LLC                  | }
+Línea 49  Columna 3   | ALITER               | aliter
+Línea 49  Columna 10  | PAREN_A              | (
+Línea 49  Columna 11  | ID                   | edad
+Línea 49  Columna 16  | MAYOR_QUE            | >
+Línea 49  Columna 18  | NUMERO_ENTERO        | 20
+Línea 49  Columna 20  | PAREN_C              | )
+Línea 49  Columna 22  | LLA                  | {
+Línea 50  Columna 5   | ID                   | poder
+Línea 50  Columna 11  | ASIG                 | =
+Línea 50  Columna 13  | NUMERO_ENTERO        | 3
+Línea 50  Columna 14  | PC                   | ;
+Línea 51  Columna 1   | LLC                  | }
+Línea 51  Columna 3   | ALITER               | aliter
+Línea 51  Columna 10  | LLA                  | {
+Línea 52  Columna 5   | ID                   | poder
+Línea 52  Columna 11  | ASIG                 | =
+Línea 52  Columna 13  | NUMERO_ENTERO        | 0
+Línea 52  Columna 14  | PC                   | ;
+Línea 53  Columna 1   | LLC                  | }
+Línea 53  Columna 3   | FIN_BLOQUE           | finis
+Línea 53  Columna 9   | PC                   | ;
+Línea 55  Columna 1   | ESTO                 | esto
+Línea 55  Columna 6   | ID                   | poderCalculado
+Línea 55  Columna 21  | DP                   | :
+Línea 55  Columna 23  | NUMERUS              | numerus
+Línea 55  Columna 31  | ID                   | fuerza
+Línea 55  Columna 38  | POR                  | *
+Línea 55  Columna 40  | NUMERO_ENTERO        | 2
+Línea 55  Columna 41  | PC                   | ;
+Línea 56  Columna 1   | ID                   | poderCalculado
+Línea 56  Columna 16  | ASIG                 | =
+Línea 56  Columna 18  | ID                   | poderCalculado
+Línea 56  Columna 33  | MAS                  | +
+Línea 56  Columna 35  | NUMERO_ENTERO        | 1
+Línea 56  Columna 36  | PC                   | ;
+Línea 57  Columna 1   | ID                   | poderCalculado
+Línea 57  Columna 16  | ASIG                 | =
+Línea 57  Columna 18  | ID                   | poderCalculado
+Línea 57  Columna 33  | MENOS                | -
+Línea 57  Columna 35  | NUMERO_ENTERO        | 1
+Línea 57  Columna 36  | PC                   | ;
+Línea 60  Columna 1   | DUM                  | dum
+Línea 60  Columna 5   | PAREN_A              | (
+Línea 60  Columna 6   | ID                   | poder
+Línea 60  Columna 12  | MENOR_QUE            | <
+Línea 60  Columna 14  | NUMERO_ENTERO        | 100
+Línea 60  Columna 17  | PAREN_C              | )
+Línea 60  Columna 19  | LLA                  | {
+Línea 61  Columna 5   | ID                   | poder
+Línea 61  Columna 11  | ASIG                 | =
+Línea 61  Columna 13  | ID                   | poder
+Línea 61  Columna 19  | MAS                  | +
+Línea 61  Columna 21  | NUMERO_ENTERO        | 1
+Línea 61  Columna 22  | PC                   | ;
+Línea 62  Columna 5   | SI                   | si
+Línea 62  Columna 8   | PAREN_A              | (
+Línea 62  Columna 9   | ID                   | poder
+Línea 62  Columna 15  | ASIG                 | =
+Línea 62  Columna 17  | NUMERO_ENTERO        | 50
+Línea 62  Columna 19  | PAREN_C              | )
+Línea 62  Columna 21  | LLA                  | {
+Línea 63  Columna 9   | INTERRUMPE           | interrumpe
+Línea 63  Columna 19  | PC                   | ;
+Línea 64  Columna 5   | LLC                  | }
+Línea 64  Columna 7   | FIN_BLOQUE           | finis
+Línea 64  Columna 12  | PC                   | ;
+Línea 65  Columna 1   | LLC                  | }
+Línea 65  Columna 3   | FIN_BLOQUE           | finis
+Línea 65  Columna 9   | PC                   | ;
+Línea 67  Columna 1   | FACERE               | facere
+Línea 67  Columna 8   | LLA                  | {
+Línea 68  Columna 5   | ID                   | fuerza
+Línea 68  Columna 12  | ASIG                 | =
+Línea 68  Columna 14  | ID                   | fuerza
+Línea 68  Columna 21  | MAS                  | +
+Línea 68  Columna 23  | NUMERO_ENTERO        | 1
+Línea 68  Columna 24  | PC                   | ;
+Línea 69  Columna 5   | SI                   | si
+Línea 69  Columna 8   | PAREN_A              | (
+Línea 69  Columna 9   | ID                   | fuerza
+Línea 69  Columna 16  | ASIG                 | =
+Línea 69  Columna 18  | NUMERO_ENTERO        | 20
+Línea 69  Columna 20  | PAREN_C              | )
+Línea 69  Columna 22  | LLA                  | {
+Línea 70  Columna 9   | INTERRUMPE           | interrumpe
+Línea 70  Columna 19  | PC                   | ;
+Línea 71  Columna 5   | LLC                  | }
+Línea 71  Columna 7   | FIN_BLOQUE           | finis
+Línea 71  Columna 12  | PC                   | ;
+Línea 72  Columna 1   | LLC                  | }
+Línea 72  Columna 3   | DUM                  | dum
+Línea 72  Columna 7   | PAREN_A              | (
+Línea 72  Columna 8   | ID                   | fuerza
+Línea 72  Columna 15  | MENOR_QUE            | <
+Línea 72  Columna 17  | NUMERO_ENTERO        | 30
+Línea 72  Columna 19  | PAREN_C              | )
+Línea 72  Columna 20  | PC                   | ;
+Línea 74  Columna 1   | PER                  | per
+Línea 74  Columna 5   | PAREN_A              | (
+Línea 74  Columna 6   | ESTO                 | esto
+Línea 74  Columna 11  | ID                   | i
+Línea 74  Columna 13  | DP                   | :
+Línea 74  Columna 15  | NUMERUS              | numerus
+Línea 74  Columna 23  | NUMERO_ENTERO        | 0
+Línea 74  Columna 24  | PC                   | ;
+Línea 74  Columna 26  | ID                   | i
+Línea 74  Columna 28  | MENOR_QUE            | <
+Línea 74  Columna 30  | NUMERO_ENTERO        | 10
+Línea 74  Columna 32  | PC                   | ;
+Línea 74  Columna 34  | ID                   | i
+Línea 74  Columna 35  | INCREMENTO           | ++
+Línea 74  Columna 37  | PAREN_C              | )
+Línea 74  Columna 39  | LLA                  | {
+Línea 75  Columna 5   | SI                   | si
+Línea 75  Columna 8   | PAREN_A              | (
+Línea 75  Columna 9   | ID                   | i
+Línea 75  Columna 11  | ASIG                 | =
+Línea 75  Columna 13  | NUMERO_ENTERO        | 5
+Línea 75  Columna 14  | PAREN_C              | )
+Línea 75  Columna 16  | LLA                  | {
+Línea 76  Columna 9   | PERGE                | perge
+Línea 76  Columna 14  | PC                   | ;
+Línea 77  Columna 5   | LLC                  | }
+Línea 77  Columna 7   | FIN_BLOQUE           | finis
+Línea 77  Columna 12  | PC                   | ;
+Línea 78  Columna 5   | SI                   | si
+Línea 78  Columna 8   | PAREN_A              | (
+Línea 78  Columna 9   | ID                   | i
+Línea 78  Columna 11  | ASIG                 | =
+Línea 78  Columna 13  | NUMERO_ENTERO        | 8
+Línea 78  Columna 14  | PAREN_C              | )
+Línea 78  Columna 16  | LLA                  | {
+Línea 79  Columna 9   | INTERRUMPE           | interrumpe
+Línea 79  Columna 19  | PC                   | ;
+Línea 80  Columna 5   | LLC                  | }
+Línea 80  Columna 7   | FIN_BLOQUE           | finis
+Línea 80  Columna 12  | PC                   | ;
+Línea 81  Columna 1   | LLC                  | }
+Línea 83  Columna 1   | PER                  | per
+Línea 83  Columna 5   | PAREN_A              | (
+Línea 83  Columna 6   | ID                   | poder
+Línea 83  Columna 12  | ASIG                 | =
+Línea 83  Columna 14  | NUMERO_ENTERO        | 0
+Línea 83  Columna 15  | PC                   | ;
+Línea 83  Columna 17  | ID                   | poder
+Línea 83  Columna 23  | MENOR_QUE            | <
+Línea 83  Columna 25  | NUMERO_ENTERO        | 5
+Línea 83  Columna 26  | PC                   | ;
+Línea 83  Columna 28  | ID                   | poder
+Línea 83  Columna 34  | ASIG                 | =
+Línea 83  Columna 36  | ID                   | poder
+Línea 83  Columna 42  | MAS                  | +
+Línea 83  Columna 44  | NUMERO_ENTERO        | 1
+Línea 83  Columna 45  | PAREN_C              | )
+Línea 83  Columna 47  | LLA                  | {
+Línea 84  Columna 5   | PRINT                | >>
+Línea 84  Columna 8   | ID                   | poder
+Línea 84  Columna 13  | PC                   | ;
+Línea 85  Columna 1   | LLC                  | }
+Línea 87  Columna 1   | ID                   | miObjeto
+Línea 87  Columna 9   | PUNTO                | .
+Línea 87  Columna 10  | ID                   | nombre
+Línea 87  Columna 17  | ASIG                 | =
+Línea 87  Columna 19  | STRING               | "Yennifer"
+Línea 87  Columna 29  | PC                   | ;
+Línea 88  Columna 1   | ID                   | misObjetos
+Línea 88  Columna 11  | CA                   | [
+Línea 88  Columna 12  | NUMERO_ENTERO        | 9
+Línea 88  Columna 13  | CC                   | ]
+Línea 88  Columna 14  | PUNTO                | .
+Línea 88  Columna 15  | ID                   | hablar
+Línea 88  Columna 21  | PAREN_A              | (
+Línea 88  Columna 22  | ID                   | miObjeto
+Línea 88  Columna 30  | PUNTO                | .
+Línea 88  Columna 31  | ID                   | getNombre
+Línea 88  Columna 40  | PAREN_A              | (
+Línea 88  Columna 41  | PAREN_C              | )
+Línea 88  Columna 42  | PAREN_C              | )
+Línea 88  Columna 43  | PC                   | ;
+Línea 89  Columna 1   | ID                   | comandante
+Línea 89  Columna 12  | ASIG                 | =
+Línea 89  Columna 14  | ID                   | miObjeto
+Línea 89  Columna 22  | PUNTO                | .
+Línea 89  Columna 23  | ID                   | apellidos
+Línea 89  Columna 32  | CA                   | [
+Línea 89  Columna 33  | NUMERO_ENTERO        | 0
+Línea 89  Columna 34  | CC                   | ]
+Línea 89  Columna 35  | PUNTO                | .
+Línea 89  Columna 36  | ID                   | getNombre
+Línea 89  Columna 45  | PAREN_A              | (
+Línea 89  Columna 46  | PAREN_C              | )
+Línea 89  Columna 47  | PC                   | ;
+Línea 91  Columna 1   | ESTO                 | esto
+Línea 91  Columna 6   | ID                   | resultadoLogico
+Línea 91  Columna 22  | DP                   | :
+Línea 91  Columna 24  | BOOL                 | bool
+Línea 91  Columna 29  | VERUM                | verum
+Línea 91  Columna 35  | OR                   | ||
+Línea 91  Columna 38  | NUMERO_ENTERO        | 1
+Línea 91  Columna 40  | ASIG                 | =
+Línea 91  Columna 42  | NUMERO_ENTERO        | 1
+Línea 91  Columna 43  | PC                   | ;
+Línea 92  Columna 1   | ESTO                 | esto
+Línea 92  Columna 6   | ID                   | comparacion
+Línea 92  Columna 18  | DP                   | :
+Línea 92  Columna 20  | BOOL                 | bool
+Línea 92  Columna 25  | PAREN_A              | (
+Línea 92  Columna 26  | ID                   | edad
+Línea 92  Columna 31  | MAYOR_QUE            | >
+Línea 92  Columna 33  | NUMERO_ENTERO        | 10
+Línea 92  Columna 35  | PAREN_C              | )
+Línea 92  Columna 37  | AND                  | &&
+Línea 92  Columna 40  | PAREN_A              | (
+Línea 92  Columna 41  | ID                   | poder
+Línea 92  Columna 47  | MENOR_IGUAL          | <=
+Línea 92  Columna 50  | NUMERO_ENTERO        | 5
+Línea 92  Columna 51  | PAREN_C              | )
+Línea 92  Columna 53  | OR                   | ||
+Línea 92  Columna 56  | PAREN_A              | (
+Línea 92  Columna 57  | ID                   | fuerza
+Línea 92  Columna 64  | MAYOR_IGUAL          | >=
+Línea 92  Columna 67  | NUMERO_ENTERO        | 1
+Línea 92  Columna 68  | PAREN_C              | )
+Línea 92  Columna 69  | PC                   | ;
+Línea 93  Columna 1   | ESTO                 | esto
+Línea 93  Columna 6   | ID                   | expresionCompleja
+Línea 93  Columna 24  | DP                   | :
+Línea 93  Columna 26  | NUMERUS              | numerus
+Línea 93  Columna 34  | PAREN_A              | (
+Línea 93  Columna 35  | ID                   | fuerza
+Línea 93  Columna 42  | MAS                  | +
+Línea 93  Columna 44  | ID                   | poder
+Línea 93  Columna 49  | PAREN_C              | )
+Línea 93  Columna 51  | POR                  | *
+Línea 93  Columna 53  | NUMERO_ENTERO        | 2
+Línea 93  Columna 55  | MENOS                | -
+Línea 93  Columna 57  | PAREN_A              | (
+Línea 93  Columna 58  | ID                   | edad
+Línea 93  Columna 63  | DIVISION             | /
+Línea 93  Columna 65  | NUMERO_ENTERO        | 2
+Línea 93  Columna 66  | PAREN_C              | )
+Línea 93  Columna 67  | PC                   | ;
+Línea 94  Columna 1   | ESTO                 | esto
+Línea 94  Columna 6   | ID                   | expresionUnaria
+Línea 94  Columna 22  | DP                   | :
+Línea 94  Columna 24  | NUMERUS              | numerus
+Línea 94  Columna 32  | MENOS                | -
+Línea 94  Columna 33  | ID                   | fuerza
+Línea 94  Columna 40  | MAS                  | +
+Línea 94  Columna 42  | MAS                  | +
+Línea 94  Columna 43  | ID                   | poder
+Línea 94  Columna 48  | PC                   | ;
+Línea 96  Columna 1   | PRINT                | >>
+Línea 96  Columna 4   | STRING               | "Tu poder es: "
+Línea 96  Columna 20  | PRINT                | >>
+Línea 96  Columna 23  | ID                   | calcularPoder
+Línea 96  Columna 36  | PAREN_A              | (
+Línea 96  Columna 37  | ID                   | fuerza
+Línea 96  Columna 43  | PAREN_C              | )
+Línea 96  Columna 44  | PC                   | ;
+Línea 97  Columna 1   | PRINT                | >>
+Línea 97  Columna 4   | STRING               | "La puerta esta cifrada?"
+Línea 97  Columna 30  | PRINT                | >>
+Línea 97  Columna 33  | ID                   | cifrado
+Línea 97  Columna 41  | PC                   | ;
+Línea 99  Columna 1   | FIN_PROGRAMA         | FINIS
+Línea 99  Columna 6   | PC                   | ;
+
+--- Errores ---
+
+Y:
+
+Z:
+
+PIG:
+
