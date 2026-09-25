@@ -1,7 +1,7 @@
 %estructuras
 estructura Persona:
-     entero edad
-      cadena nombre
+    entero edad
+    cadena nombre
     flotante promedio
     caracter inicial
     bool activo
@@ -153,3 +153,6 @@ definir principal():
     total = procesarArreglo(arr, 3)
     imprimir(total)
     sinParametrosNiRetorno()
+
+
+

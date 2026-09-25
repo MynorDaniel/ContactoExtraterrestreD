@@ -1,99 +1,76 @@
-import carpeta.Objeto1.z
-import carpeta.Funciones.y
+import contacto.Contacto
+import funciones.Y
 
-##
-    Sección opcional de variables, puede no existir
-    En esta sección solo se definen variables, arreglos
-    o estructuras globales
-##
 VARIABILES>
-esto edad : numerus 20;
-esto cifrado : bool falsus;
-esto comandante : textum "Estudiante X";
-esto fuerza : numerus 10;
-esto poder : numerus 0;
-esto gravedad : decimalis 9.81;
-esto inicial : littera 'a';
+esto edad : numerus 24;
+esto nombre : textum "Comandante Zeta";
 esto activo : bool verum;
-series mis_enteros[3] : numerus {1, 1, 1};
-series mis_enteros_[3] : numerus;
-series nombres[2] : textum {"Hola", "Adios"};
-series matriz[2][2] : numerus {{1, 2}, {3, 4}};
-series misObjetos[10] : Persona;
-esto miObjeto : Persona novus Persona(12, "Profesor");
-esto otroObjeto : Persona novus Persona(12, miObjeto, novus Persona());
+
+esto persona1 : Persona novus Persona();
+esto curso1 : Curso novus Curso();
+esto punto1 : Punto novus Punto();
+
+esto contacto1 : Contacto novus Contacto("Ana Zeta", 30);
+esto contacto2 : Contacto novus Contacto();
+
+series notasContacto[3] : numerus {90, 80, 70};
+
+esto sumaY : numerus sumar(5, 10);
+esto restaY : numerus restar(sumaY, 3);
+series arregloY[3] : numerus obtenerArreglo();
+esto personaY : Persona obtenerPersona();
 
 MAIOR>
->> "Hola comandante!" ;
->> "Ingresa tu nombre por favor" ;
-comandante << ;
->> "Bienvenido" >> comandante ;
->> "Ingresa tu edad" ;
+>> "Ingresa tu edad:";
 edad << ;
 
-si (edad >= 18) {
-    cifrado = verum;
-    fuerza = 12;
-} finis ;
+>> "=== Persona (definida en el .y) ===";
+persona1.nombre = "Comandante X";
+persona1.edad = 150;
+persona1.calificaciones[0] = 100;
+>> persona1.nombre;
+>> persona1.edad;
+>> persona1.calificaciones[0];
 
-si (edad >= 18) {
-    cifrado = verum;
+>> "=== Curso y Punto (definidas en el .y) ===";
+curso1.titulo = "Xenolinguistica";
+curso1.creditos = 4;
+curso1.instructor = persona1;
+>> curso1.titulo;
+>> curso1.instructor.nombre;
+
+punto1.x = 3;
+punto1.y = 7;
+>> punto1.x + punto1.y;
+
+>> "=== Funciones sueltas del .y ===";
+saludar(nombre);
+sinParametrosNiRetorno();
+>> sumaY;
+>> restaY;
+>> arregloY[0];
+>> personaY.nombre;
+
+>> "=== Contacto (definida en el .z) ===";
+contacto1.saludar();
+contacto2.saludar();
+>> contacto1.esMayorDeEdad();
+>> contacto1.calcularAnioNacimiento(2024);
+>> contacto1.promedioNotas(notasContacto, 3);
+>> contacto1.demoTernario(edad);
+
+si (contacto1.esMayorDeEdad()) {
+    >> "El contacto es mayor de edad";
 } aliter {
-    cifrado = falsus;
-} finis ;
+    >> "El contacto es menor de edad";
+} finis;
 
-si (edad > 10 && edad < 20) {
-    poder = 1;
-} aliter (edad = 18) {
-    poder = 2;
-} aliter (edad > 20) {
-    poder = 3;
-} aliter {
-    poder = 0;
-} finis ;
+esto total : numerus sumar(persona1.edad, contacto1.calcularAnioNacimiento(2024));
+>> "Total combinado:";
+>> total;
 
-esto poderCalculado : numerus fuerza * 2;
-poderCalculado = poderCalculado + 1;
-poderCalculado = poderCalculado - 1;
-
-// ciclo dum con interrupcion
-dum (poder < 100) {
-    poder = poder + 1;
-    si (poder = 50) {
-        interrumpe;
-    } finis;
-} finis ;
-
-facere {
-    fuerza = fuerza + 1;
-    si (fuerza = 20) {
-        interrumpe;
-    } finis;
-} dum (fuerza < 30);
-
-per (esto i : numerus 0; i < 10; i++) {
-    si (i = 5) {
-        perge;
-    } finis;
-    si (i = 8) {
-        interrumpe;
-    } finis;
+per (esto i : numerus 0; i < 3; i++) {
+    >> notasContacto[i];
 }
-
-per (poder = 0; poder < 5; poder = poder + 1) {
-    >> poder;
-}
-
-miObjeto.nombre = "Yennifer";
-misObjetos[9].hablar(miObjeto.getNombre());
-comandante = miObjeto.apellidos[0].getNombre();
-
-esto resultadoLogico : bool verum || 1 = 1;
-esto comparacion : bool (edad > 10) && (poder <= 5) || (fuerza >= 1);
-esto expresionCompleja : numerus (fuerza + poder) * 2 - (edad / 2);
-esto expresionUnaria : numerus -fuerza + +poder;
-
->> "Tu poder es: " >> calcularPoder(fuerza);
->> "La puerta esta cifrada?" >> cifrado ;
 
 FINIS;

@@ -4,10 +4,23 @@
 package com.mynor.contactoextraterrestred;
 
 import com.mynor.contactoextraterrestred.antlr4.*;
+import com.mynor.contactoextraterrestred.ast.CreadorASTPIG;
+import com.mynor.contactoextraterrestred.ast.CreadorASTY;
+import com.mynor.contactoextraterrestred.ast.CreadorASTZ;
+import com.mynor.contactoextraterrestred.ast.NodoAST;
+import com.mynor.contactoextraterrestred.ast.NodoPrograma;
+import com.mynor.contactoextraterrestred.ast.Programa;
+import com.mynor.contactoextraterrestred.ast.visitantes.codigointermedio.GeneradorCuartetas;
+import com.mynor.contactoextraterrestred.ast.visitantes.semantico.AnalizadorSemantico;
 import com.mynor.contactoextraterrestred.errorlistener.ErrorLexico;
 import com.mynor.contactoextraterrestred.errorlistener.ErrorLexicoListener;
+import com.mynor.contactoextraterrestred.errorlistener.ErrorSintacticoListener;
+import com.mynor.contactoextraterrestred.utils.ImpresorAST;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
+import java.util.function.Function;
 import org.antlr.v4.runtime.*;
 
 /**
@@ -15,6 +28,8 @@ import org.antlr.v4.runtime.*;
  * @author mynordma
  */
 public class ContactoExtraterrestreD {
+    
+    static String rutaSalida = "/home/mynordma/ContactoExtraterrestreD/doc/salida.txt";
 
     public static void main(String[] args) {
         try {
@@ -22,86 +37,122 @@ public class ContactoExtraterrestreD {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
     static void test() throws IOException {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(rutaSalida))) {
 
-        // .y
-        String archivoY
-                = "/home/mynordma/ContactoExtraterrestreD/doc/entrada.y";
+            ResultadoAnalisis resultadoY = analizar(
+                    "/home/mynordma/ContactoExtraterrestreD/doc/entrada.y",
+                    "Y",
+                    YLexer::new,
+                    YParser::new,
+                    YParser::s,
+                    writer
+            );
 
-        CharStream inputY
-                = CharStreams.fromFileName(archivoY);
+            ResultadoAnalisis resultadoZ = analizar(
+                    "/home/mynordma/ContactoExtraterrestreD/doc/entrada.z",
+                    "Z",
+                    ZLexer::new,
+                    ZParser::new,
+                    ZParser::unidad,
+                    writer
+            );
 
-        YLexer lexerY = new YLexer(inputY);
+            ResultadoAnalisis resultadoPIG = analizar(
+                    "/home/mynordma/ContactoExtraterrestreD/doc/entrada.pig",
+                    "PIG",
+                    PIGLexer::new,
+                    PIGParser::new,
+                    PIGParser::programa,
+                    writer
+            );
 
-        List<ErrorLexico> erroresY
-                = imprimirTokens(lexerY, "Y");
+            writer.println("\n--- Errores ---");
 
-        // .z
-        String archivoZ
-                = "/home/mynordma/ContactoExtraterrestreD/doc/entrada.z";
+            imprimirErrores("Y", resultadoY, writer);
+            imprimirErrores("Z", resultadoZ, writer);
+            imprimirErrores("PIG", resultadoPIG, writer);
+            
+            // Creacion de los arboles de sintaxis abstracta
+            
+            Programa programa = new Programa();
+            
+            CreadorASTY creadorASTY = new CreadorASTY();
+            NodoAST raizY = creadorASTY.visit(resultadoY.arbol);
+            programa.agregarArchivo(raizY);
+            
+            CreadorASTZ creadorASTZ = new CreadorASTZ();
+            NodoAST raizZ = creadorASTZ.visit(resultadoZ.arbol);
+            programa.agregarArchivo(raizZ);
+            
+            CreadorASTPIG creadorASTPIG = new CreadorASTPIG();
+            NodoAST raizPIG = creadorASTPIG.visit(resultadoPIG.arbol);
+            programa.agregarArchivo(raizPIG);
+            
+            writer.print(ImpresorAST.imprimirAST(programa));
+            
+            AnalizadorSemantico analizadorSemantico = new AnalizadorSemantico();
+            AnalizadorSemantico.ArchivoPrograma archivoY = new AnalizadorSemantico.ArchivoPrograma("Y", (NodoPrograma) raizY);
+            AnalizadorSemantico.ArchivoPrograma archivoZ = new AnalizadorSemantico.ArchivoPrograma("Z", (NodoPrograma) raizZ);
+            AnalizadorSemantico.ArchivoPrograma archivoPIG = new AnalizadorSemantico.ArchivoPrograma("PIG", (NodoPrograma) raizPIG);
 
-        CharStream inputZ
-                = CharStreams.fromFileName(archivoZ);
+            analizadorSemantico.analizarProgramas(archivoY, archivoZ, archivoPIG);
+            writer.println("\n--- Errores semánticos ---");
 
-        ZLexer lexerZ = new ZLexer(inputZ);
-
-        List<ErrorLexico> erroresZ
-                = imprimirTokens(lexerZ, "Z");
-
-        // .pig
-        String archivoPIG
-                = "/home/mynordma/ContactoExtraterrestreD/doc/entrada.pig";
-
-        CharStream inputPIG
-                = CharStreams.fromFileName(archivoPIG);
-
-        PIGLexer lexerPIG = new PIGLexer(inputPIG);
-
-        List<ErrorLexico> erroresPIG
-                = imprimirTokens(lexerPIG, "PIG");
-
-        System.out.println("\n--- Errores ---");
-
-        System.out.println("\nY:");
-        erroresY.forEach(System.out::println);
-
-        System.out.println("\nZ:");
-        erroresZ.forEach(System.out::println);
-
-        System.out.println("\nPIG:");
-        erroresPIG.forEach(System.out::println);
+            imprimirErroresSemanticos("",analizadorSemantico, writer);
+            
+            GeneradorCuartetas generadorCuartetas = new GeneradorCuartetas();
+            //generadorCuartetas.generarProgramas((NodoPrograma) raizY, (NodoPrograma) raizZ, (NodoPrograma) raizPIG);
+            //List<Cuarteto> cuartetas = generadorCuartetas.getCodigo();
+            writer.append(generadorCuartetas.imprimirCodigo());
+        }
     }
 
-    static List<ErrorLexico> imprimirTokens(Lexer lexer, String titulo) {
+    static <L extends Lexer, P extends Parser> ResultadoAnalisis analizar(
+            String archivo,
+            String titulo,
+            Function<CharStream, L> crearLexer,
+            Function<TokenStream, P> crearParser,
+            Function<P, ParserRuleContext> reglaInicial,
+            PrintWriter writer) throws IOException {
+
+        CharStream inputLexico = CharStreams.fromFileName(archivo);
+        L lexerLexico = crearLexer.apply(inputLexico);
+        List<ErrorLexico> erroresLexicos = imprimirTokens(lexerLexico, titulo, writer);
+
+        CharStream inputSintactico = CharStreams.fromFileName(archivo);
+        L lexerSintactico = crearLexer.apply(inputSintactico);
+        CommonTokenStream tokens = new CommonTokenStream(lexerSintactico);
+
+        P parser = crearParser.apply(tokens);
+        parser.removeErrorListeners();
+
+        ErrorSintacticoListener errorListener = new ErrorSintacticoListener();
+        parser.addErrorListener(errorListener);
+
+        ParserRuleContext arbol = reglaInicial.apply(parser);
+
+        return new ResultadoAnalisis(arbol, erroresLexicos, errorListener.getErrores());
+    }
+
+    static List<ErrorLexico> imprimirTokens(Lexer lexer, String titulo, PrintWriter writer) {
 
         ErrorLexicoListener listener = new ErrorLexicoListener();
 
         lexer.removeErrorListeners();
         lexer.addErrorListener(listener);
 
-        Token token;
+        writer.println("----- TOKENS " + titulo + " -----");
 
-        System.out.println("----- TOKENS " + titulo + " -----");
+        Token token;
 
         while ((token = lexer.nextToken()).getType() != Token.EOF) {
 
-            String nombreToken = "";
+            String nombreToken = lexer.getVocabulary().getSymbolicName(token.getType());
 
-            if (lexer instanceof YLexer) {
-                nombreToken
-                        = YParser.VOCABULARY.getSymbolicName(token.getType());
-            } else if (lexer instanceof ZLexer) {
-                nombreToken
-                        = ZParser.VOCABULARY.getSymbolicName(token.getType());
-            } else if (lexer instanceof PIGLexer) {
-                nombreToken
-                        = PIGParser.VOCABULARY.getSymbolicName(token.getType());
-            }
-
-            System.out.printf(
+            writer.printf(
                     "Línea %-3d Columna %-3d | %-20s | %s%n",
                     token.getLine(),
                     token.getCharPositionInLine() + 1,
@@ -111,5 +162,22 @@ public class ContactoExtraterrestreD {
         }
 
         return listener.getErrores();
+    }
+
+    static void imprimirErrores(String titulo, ResultadoAnalisis resultado, PrintWriter writer) {
+        writer.println("\n" + titulo + ":");
+        resultado.erroresLexicos().forEach(writer::println);
+        resultado.erroresSintacticos().forEach(writer::println);
+    }
+
+    static void imprimirErroresSemanticos(String titulo, AnalizadorSemantico analizador, PrintWriter writer) {
+        writer.println("\n" + titulo + ":");
+        analizador.getErrores().forEach(writer::println);
+    }
+
+    record ResultadoAnalisis(
+            ParserRuleContext arbol,
+            List<ErrorLexico> erroresLexicos,
+            List<String> erroresSintacticos) {
     }
 }

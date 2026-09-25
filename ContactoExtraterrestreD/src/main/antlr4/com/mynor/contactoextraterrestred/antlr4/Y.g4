@@ -76,8 +76,7 @@ tokens { INDENTACION, DESINDENTACION }
                 pendingTokens.offer(nuevoToken(YParser.DESINDENTACION, t));
             }
             if (indentStack.peek() != anchoIndentacion) {
-                throw new RuntimeException(
-                    "Indentacion inconsistente en la linea " + t.getLine());
+                // Guardar error
             }
         }
 
