@@ -18,12 +18,12 @@ public class NodoPrograma extends NodoAST {
     private final List<NodoAST> sentenciasPrincipales;
 
     public NodoPrograma(int linea, int columna,
-                         List<NodoImportacion> importaciones,
-                         List<NodoDeclaracion> variablesGlobales,
-                         List<NodoEstructura> estructuras,
-                         List<NodoFuncion> funciones,
-                         NodoEstructura claseUnica,
-                         List<NodoAST> sentenciasPrincipales) {
+            List<NodoImportacion> importaciones,
+            List<NodoDeclaracion> variablesGlobales,
+            List<NodoEstructura> estructuras,
+            List<NodoFuncion> funciones,
+            NodoEstructura claseUnica,
+            List<NodoAST> sentenciasPrincipales) {
         super(linea, columna);
         this.importaciones = importaciones;
         this.variablesGlobales = variablesGlobales;
@@ -33,12 +33,29 @@ public class NodoPrograma extends NodoAST {
         this.sentenciasPrincipales = sentenciasPrincipales;
     }
 
-    public List<NodoImportacion> getImportaciones() { return importaciones; }
-    public List<NodoDeclaracion> getVariablesGlobales() { return variablesGlobales; }
-    public List<NodoEstructura> getEstructuras() { return estructuras; }
-    public List<NodoFuncion> getFunciones() { return funciones; }
-    public NodoEstructura getClaseUnica() { return claseUnica; }
-    public List<NodoAST> getSentenciasPrincipales() { return sentenciasPrincipales; }
+    public List<NodoImportacion> getImportaciones() {
+        return importaciones;
+    }
+
+    public List<NodoDeclaracion> getVariablesGlobales() {
+        return variablesGlobales;
+    }
+
+    public List<NodoEstructura> getEstructuras() {
+        return estructuras;
+    }
+
+    public List<NodoFuncion> getFunciones() {
+        return funciones;
+    }
+
+    public NodoEstructura getClaseUnica() {
+        return claseUnica;
+    }
+
+    public List<NodoAST> getSentenciasPrincipales() {
+        return sentenciasPrincipales;
+    }
 
     @Override
     public <T> T aceptar(VisitanteAST<T> visitante) {

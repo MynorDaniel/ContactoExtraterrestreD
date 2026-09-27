@@ -102,7 +102,7 @@ expresionOr: expresionAnd (OR expresionAnd)*;
 
 expresionAnd: expresionIgualdad (AND expresionIgualdad)*;
 
-expresionIgualdad: expresionRelacional (ASIG expresionRelacional)*;
+expresionIgualdad: expresionRelacional ((IGUAL | DISTINTO) expresionRelacional)*;
 
 expresionRelacional
     : expresionAditiva
@@ -189,6 +189,8 @@ PAREN_C: ')';
 LLA: '{';
 LLC: '}';
 
+IGUAL: '==';
+DISTINTO: '!=';
 ASIG: '=';
 
 MAS: '+';

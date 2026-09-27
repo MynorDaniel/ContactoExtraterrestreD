@@ -141,7 +141,7 @@ definir demoLectura():
 definir demoAcceso({} Curso c) -> cadena:
     retornar c.instructor.nombre
 
-definir principal():
+definir principal():   
     entero r1
     r1 = sumar(5, 10)
     entero r2

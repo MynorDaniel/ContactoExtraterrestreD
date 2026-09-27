@@ -15,7 +15,7 @@ public class Entorno {
     private final ArrayDeque<TablaSimbolos> ambitos = new ArrayDeque<>();
 
     public Entorno() {
-        ambitos.push(new TablaSimbolos()); // ámbito global, siempre existe
+        ambitos.push(new TablaSimbolos()); 
     }
 
     public void entrarAmbito() {
