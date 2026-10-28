@@ -341,8 +341,8 @@ public class Ventana extends javax.swing.JFrame {
 
             String codigoRiscV = GeneradorRiscV.generar(generadorCuartetas);
             Path rars = rutaRars();
-            if (!Files.isRegularFile(rars)) {
-                log("No se encontro RARS en: " + rars.toAbsolutePath());
+            if (rars == null || !Files.isRegularFile(rars)) {
+                log("No se encontro RARS externo ni empaquetado.");
                 return;
             }
 
@@ -558,13 +558,17 @@ public class Ventana extends javax.swing.JFrame {
         return valor == null ? "_" : valor;
     }
 
-    private Path rutaRars() {
+    private Path rutaRars() throws IOException {
         Path directorioActual = Path.of(System.getProperty("user.dir"));
         Path rars = directorioActual.resolve("lib").resolve("rars1_6.jar");
         if (Files.isRegularFile(rars)) {
             return rars;
         }
-        return directorioActual.resolve("ContactoExtraterrestreD").resolve("lib").resolve("rars1_6.jar");
+        rars = directorioActual.resolve("ContactoExtraterrestreD").resolve("lib").resolve("rars1_6.jar");
+        if (Files.isRegularFile(rars)) {
+            return rars;
+        }
+        return EjecutorRars.rutaRarsEmpaquetado();
     }
 
     private void nuevaVentana() {

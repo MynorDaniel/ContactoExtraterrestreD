@@ -9,19 +9,35 @@ import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.function.Consumer;
 import java.util.function.IntConsumer;
 
-/**
- */
 public class EjecutorRars {
 
+    private static Path rarsEmpaquetado;
     private final Path jarRars;
     private volatile Process proceso;
     private BufferedWriter entrada;
 
     public EjecutorRars(Path jarRars) {
         this.jarRars = jarRars;
+    }
+
+    public static synchronized Path rutaRarsEmpaquetado() throws IOException {
+        if (rarsEmpaquetado != null && Files.isRegularFile(rarsEmpaquetado)) {
+            return rarsEmpaquetado;
+        }
+        try (InputStream recurso = EjecutorRars.class.getResourceAsStream("/rars/rars1_6.jar")) {
+            if (recurso == null) {
+                return null;
+            }
+            Path archivo = Files.createTempFile("rars1_6_", ".jar");
+            Files.copy(recurso, archivo, StandardCopyOption.REPLACE_EXISTING);
+            archivo.toFile().deleteOnExit();
+            rarsEmpaquetado = archivo;
+            return archivo;
+        }
     }
 
     public boolean estaEjecutando() {

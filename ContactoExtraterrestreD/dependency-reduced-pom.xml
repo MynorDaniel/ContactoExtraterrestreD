@@ -5,6 +5,15 @@
   <artifactId>ContactoExtraterrestreD</artifactId>
   <version>1.0</version>
   <build>
+    <resources>
+      <resource>
+        <targetPath>rars</targetPath>
+        <directory>lib</directory>
+        <includes>
+          <include>rars1_6.jar</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

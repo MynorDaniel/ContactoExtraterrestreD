@@ -38,6 +38,15 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>lib</directory>
+                <includes>
+                    <include>rars1_6.jar</include>
+                </includes>
+                <targetPath>rars</targetPath>
+            </resource>
+        </resources>
         <plugins>
 
             <plugin>
