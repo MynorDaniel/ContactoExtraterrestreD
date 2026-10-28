@@ -59,10 +59,26 @@ public class CreadorASTPIG extends PIGBaseVisitor<NodoAST> {
 
     @Override
     public NodoAST visitDeclaracionEsto(PIGParser.DeclaracionEstoContext ctx) {
-        NodoTipo tipo = (NodoTipo) visit(ctx.tipo());
-        String nombre = ctx.ID().getText();
-        NodoAST inicializador = visit(ctx.inicializacion());
-        return new NodoDeclaracion(linea(ctx), columna(ctx), tipo, nombre, Collections.emptyList(), inicializador);
+        String nombre = ctx.ID(0).getText();
+
+        if (ctx.tipo() != null) {
+            NodoTipo tipo = (NodoTipo) visit(ctx.tipo());
+            NodoAST inicializador = visit(ctx.inicializacion());
+            return new NodoDeclaracion(linea(ctx), columna(ctx), tipo, nombre,
+                    Collections.emptyList(), inicializador);
+        }
+
+        NodoAST inicializador = visit(ctx.expresion()); // NodoNuevoObjeto, literal NULO, identificador, etc.
+        if (ctx.ID().size() == 1 && inicializador instanceof NodoNuevoObjeto nuevo) {
+            NodoTipo tipo = new NodoTipo(nuevo.getLinea(), nuevo.getColumna(), nuevo.getNombreClase(), 0);
+            return new NodoDeclaracion(linea(ctx), columna(ctx), tipo, nombre,
+                    Collections.emptyList(), inicializador);
+        }
+
+        TerminalNode idTipo = ctx.ID(1);
+        NodoTipo tipo = new NodoTipo(linea(idTipo), columna(idTipo), idTipo.getText(), 0);
+        return new NodoDeclaracion(linea(ctx), columna(ctx), tipo, nombre,
+                Collections.emptyList(), inicializador);
     }
 
     @Override
@@ -207,10 +223,18 @@ public class CreadorASTPIG extends PIGBaseVisitor<NodoAST> {
     @Override
     public NodoAST visitForInit(PIGParser.ForInitContext ctx) {
         if (ctx.ESTO() != null) {
-            NodoTipo tipo = (NodoTipo) visit(ctx.tipo());
-            String nombre = ctx.ID().getText();
+            String nombre = ctx.ID(0).getText();
+            if (ctx.tipo() != null) {
+                NodoTipo tipo = (NodoTipo) visit(ctx.tipo());
+                NodoAST inicial = visit(ctx.expresion());
+                return new NodoDeclaracion(linea(ctx), columna(ctx), tipo, nombre,
+                        Collections.emptyList(), inicial);
+            }
+            TerminalNode idTipo = ctx.ID(1);
+            NodoTipo tipo = new NodoTipo(linea(idTipo), columna(idTipo), idTipo.getText(), 0);
             NodoAST inicial = visit(ctx.expresion());
-            return new NodoDeclaracion(linea(ctx), columna(ctx), tipo, nombre, Collections.emptyList(), inicial);
+            return new NodoDeclaracion(linea(ctx), columna(ctx), tipo, nombre,
+                    Collections.emptyList(), inicial);
         }
         NodoAST destino = visit(ctx.destino());
         NodoAST valor = visit(ctx.expresion());
@@ -361,7 +385,9 @@ public class CreadorASTPIG extends PIGBaseVisitor<NodoAST> {
         if (ctx.VERUM() != null) {
             return new NodoLiteral(linea(ctx), columna(ctx), Boolean.TRUE, TipoLiteral.BOOLEANO);
         }
-        // FALSUS
+        if (ctx.NULL() != null) {
+            return new NodoLiteral(linea(ctx), columna(ctx), null, TipoLiteral.NULO);
+        }
         return new NodoLiteral(linea(ctx), columna(ctx), Boolean.FALSE, TipoLiteral.BOOLEANO);
     }
 

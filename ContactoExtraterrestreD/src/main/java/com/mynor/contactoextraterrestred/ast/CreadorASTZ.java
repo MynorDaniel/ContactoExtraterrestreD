@@ -21,19 +21,36 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
 
     @Override
     public NodoAST visitUnidad(ZParser.UnidadContext ctx) {
-        NodoEstructura clase = (NodoEstructura) visit(ctx.clase());
-        return new NodoPrograma(linea(ctx), columna(ctx),
+        List<NodoImportacion> importaciones = new ArrayList<>();
+        for (ZParser.ImportacionContext i : ctx.importacion()) {
+            importaciones.add(new NodoImportacion(linea(i), columna(i), i.ruta().getText()));
+        }
+
+        List<NodoEstructura> clases = new ArrayList<>();
+        for (ZParser.ClaseContext c : ctx.clase()) {
+            clases.add((NodoEstructura) visit(c));
+        }
+
+        NodoEstructura primera = clases.isEmpty() ? null : clases.get(0);
+        NodoPrograma programa = new NodoPrograma(linea(ctx), columna(ctx),
+                importaciones,
                 Collections.emptyList(), 
                 Collections.emptyList(), 
                 Collections.emptyList(), 
-                Collections.emptyList(), 
-                clase,
-                Collections.emptyList()); 
+                primera,
+                Collections.emptyList());
+        programa.setClases(clases);
+        if (ctx.paquete() != null) {
+            programa.setPaquete(ctx.paquete().ruta().getText());
+        }
+        return programa;
     }
 
     @Override
     public NodoAST visitClase(ZParser.ClaseContext ctx) {
-        String nombre = ctx.ID().getText();
+        String nombre = ctx.ID(0).getText();
+        String padre = ctx.EXTENDS() != null ? ctx.ID(1).getText() : null;
+
         List<NodoAtributo> atributos = new ArrayList<>();
         List<NodoFuncion> constructores = new ArrayList<>();
         List<NodoFuncion> metodos = new ArrayList<>();
@@ -49,7 +66,10 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
             }
         }
 
-        return new NodoEstructura(linea(ctx), columna(ctx), nombre, atributos, constructores, metodos);
+        NodoEstructura clase = new NodoEstructura(linea(ctx), columna(ctx), nombre, atributos, constructores, metodos);
+        clase.setModificador(ctx.modificadorClase() != null ? "public" : "default");
+        clase.setClasePadre(padre);
+        return clase;
     }
 
     @Override
@@ -62,7 +82,10 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
         NodoTipo tipo = (NodoTipo) visit(ctx.tipo());
         String nombre = ctx.ID().getText();
         NodoAST valorInicial = ctx.expresion() != null ? visit(ctx.expresion()) : null;
-        return new NodoAtributo(linea(ctx), columna(ctx), tipo, nombre, Collections.emptyList(), valorInicial);
+        NodoAtributo atributo = new NodoAtributo(linea(ctx), columna(ctx), tipo, nombre,
+                Collections.emptyList(), valorInicial);
+        atributo.setModificador(modificador(ctx.modificadorAcceso()));
+        return atributo;
     }
 
     @Override
@@ -75,8 +98,10 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
             }
         }
         NodoBloque cuerpo = (NodoBloque) visit(ctx.bloque());
-        return new NodoFuncion(linea(ctx), columna(ctx), nombre, parametros, null,
+        NodoFuncion constructor = new NodoFuncion(linea(ctx), columna(ctx), nombre, parametros, null,
                 cuerpo.getSentencias(), true);
+        constructor.setModificador(modificador(ctx.modificadorAcceso()));
+        return constructor;
     }
 
     @Override
@@ -90,8 +115,11 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
             }
         }
         NodoBloque cuerpo = (NodoBloque) visit(ctx.bloque());
-        return new NodoFuncion(linea(ctx), columna(ctx), nombre, parametros, tipoRetorno,
+        NodoFuncion metodo = new NodoFuncion(linea(ctx), columna(ctx), nombre, parametros, tipoRetorno,
                 cuerpo.getSentencias(), false);
+        metodo.setModificador(modificador(ctx.modificadorAcceso()));
+        metodo.setEsOverride(ctx.anotacionOverride() != null);
+        return metodo;
     }
 
     @Override
@@ -166,7 +194,12 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
 
     @Override
     public NodoAST visitDestino(ZParser.DestinoContext ctx) {
-        NodoAST resultado = new NodoIdentificador(linea(ctx.ID()), columna(ctx.ID()), ctx.ID().getText());
+        NodoAST resultado;
+        if (ctx.THIS() != null) {
+            resultado = new NodoIdentificador(linea(ctx.THIS()), columna(ctx.THIS()), "this");
+        } else {
+            resultado = new NodoIdentificador(linea(ctx.ID()), columna(ctx.ID()), ctx.ID().getText());
+        }
         for (ZParser.AccesoContext acceso : ctx.acceso()) {
             resultado = aplicarAcceso(resultado, acceso);
         }
@@ -345,8 +378,11 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
     @Override
     public NodoAST visitExpresionUnaria(ZParser.ExpresionUnariaContext ctx) {
         if (ctx.expresionUnaria() != null) {
-            String operador = ctx.getChild(0).getText(); // NEGACION | MENOS | MAS
+            String operador = ctx.getChild(0).getText();
             NodoAST operando = visit(ctx.expresionUnaria());
+            if ("++".equals(operador) || "--".equals(operador)) {
+                return new NodoIncrementoDecremento(linea(ctx), columna(ctx), operando, operador, false);
+            }
             return new NodoUnaria(linea(ctx), columna(ctx), operador, operando);
         }
         return visit(ctx.expresionPostfija());
@@ -358,6 +394,10 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
         for (ZParser.SufijoContext sufijo : ctx.sufijo()) {
             resultado = aplicarSufijo(resultado, sufijo);
         }
+        if (ctx.INCREMENTO() != null || ctx.DECREMENTO() != null) {
+            String operador = ctx.INCREMENTO() != null ? "++" : "--";
+            return new NodoIncrementoDecremento(linea(ctx), columna(ctx), resultado, operador, true);
+        }
         return resultado;
     }
 
@@ -365,6 +405,12 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
     public NodoAST visitExpresionPrimaria(ZParser.ExpresionPrimariaContext ctx) {
         if (ctx.literal() != null) {
             return visit(ctx.literal());
+        }
+        if (ctx.THIS() != null) {
+            return new NodoIdentificador(linea(ctx.THIS()), columna(ctx.THIS()), "this");
+        }
+        if (ctx.SUPER() != null) {
+            return new NodoIdentificador(linea(ctx.SUPER()), columna(ctx.SUPER()), "super");
         }
         if (ctx.ID() != null) {
             return new NodoIdentificador(linea(ctx.ID()), columna(ctx.ID()), ctx.ID().getText());
@@ -378,7 +424,6 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
         if (ctx.READLN() != null) {
             return new NodoLecturaEntrada(linea(ctx), columna(ctx));
         }
-        // PAREN_A expresion PAREN_C
         return visit(ctx.expresion());
     }
 
@@ -430,7 +475,6 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
         if (ctx.FALSO() != null) {
             return new NodoLiteral(linea(ctx), columna(ctx), Boolean.FALSE, TipoLiteral.BOOLEANO);
         }
-        // NULL
         return new NodoLiteral(linea(ctx), columna(ctx), null, TipoLiteral.NULO);
     }
 
@@ -448,6 +492,10 @@ public class CreadorASTZ extends ZBaseVisitor<NodoAST> {
 
     private int columna(TerminalNode t) {
         return t.getSymbol().getCharPositionInLine();
+    }
+
+    private String modificador(ZParser.ModificadorAccesoContext ctx) {
+        return ctx == null ? "default" : ctx.getText();
     }
 
     private NodoAST plegarIzquierda(ParserRuleContext ctx, List<? extends ParserRuleContext> operandos) {

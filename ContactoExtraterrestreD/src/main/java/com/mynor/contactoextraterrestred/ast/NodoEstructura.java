@@ -9,6 +9,8 @@ public class NodoEstructura extends NodoAST {
     private final List<NodoAtributo> atributos;
     private final List<NodoFuncion> constructores;
     private final List<NodoFuncion> metodos;
+    private String modificador;
+    private String clasePadre;
 
     public NodoEstructura(int linea, int columna, String nombre,
             List<NodoAtributo> atributos,
@@ -35,6 +37,22 @@ public class NodoEstructura extends NodoAST {
 
     public List<NodoFuncion> getMetodos() {
         return metodos;
+    }
+
+    public void setModificador(String modificador) {
+        this.modificador = modificador;
+    }
+
+    public String getModificador() {
+        return modificador;
+    }
+
+    public void setClasePadre(String clasePadre) {
+        this.clasePadre = clasePadre;
+    }
+
+    public String getClasePadre() {
+        return clasePadre;
     }
 
     @Override

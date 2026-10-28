@@ -84,7 +84,7 @@ tokens { INDENTACION, DESINDENTACION }
     }
     }
     
-    s: secciones EOF;
+s: NL* secciones EOF;
 
 secciones: estructuras funciones;
 

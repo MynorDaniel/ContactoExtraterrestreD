@@ -9,7 +9,11 @@ public class NodoPrograma extends NodoAST {
 
     private final List<NodoDeclaracion> variablesGlobales;
 
-    private final List<NodoEstructura> estructuras;
+    private List<NodoEstructura> estructuras;
+
+    private List<NodoEstructura> clases = List.of();
+
+    private String paquete;
 
     private final List<NodoFuncion> funciones;
 
@@ -43,6 +47,22 @@ public class NodoPrograma extends NodoAST {
 
     public List<NodoEstructura> getEstructuras() {
         return estructuras;
+    }
+
+    public void setPaquete(String paquete) {
+        this.paquete = paquete;
+    }
+
+    public String getPaquete() {
+        return paquete;
+    }
+
+    public void setClases(List<NodoEstructura> clases) {
+        this.clases = clases;
+    }
+
+    public List<NodoEstructura> getClases() {
+        return clases;
     }
 
     public List<NodoFuncion> getFunciones() {

@@ -1,8 +1,16 @@
 grammar Z;
 
-unidad: clase EOF;
+unidad: paquete? importacion* clase+ EOF;
 
-clase: PUBLIC CLASS ID LLA miembro* LLC;
+paquete: PACKAGE ruta PC;
+
+importacion: IMPORT ruta PC;
+
+ruta: ID (PUNTO ID)*;
+
+clase: modificadorClase? CLASS ID (EXTENDS ID)? LLA miembro* LLC;
+
+modificadorClase: PUBLIC;
 
 miembro
     : atributo
@@ -10,11 +18,17 @@ miembro
     | metodo
     ;
 
-atributo: tipo ID (ASIG expresion)? PC;
+modificadorAcceso: PUBLIC | PRIVATE | PROTECTED;
 
-constructor: PUBLIC ID PAREN_A parametros? PAREN_C bloque;
+atributo: modificadorAcceso? tipo ID (ASIG expresion)? PC;
 
-metodo: PUBLIC tipo ID PAREN_A parametros? PAREN_C bloque;
+constructor: modificadorAcceso? ID PAREN_A parametros? PAREN_C bloque;
+
+metodo
+    : anotacionOverride? modificadorAcceso? tipo ID PAREN_A parametros? PAREN_C bloque
+    ;
+
+anotacionOverride: OVERRIDE;
 
 parametros: parametro (COMA parametro)*;
 
@@ -59,7 +73,7 @@ asignacion
 
 incrementoDecremento: destino (INCREMENTO | DECREMENTO) PC;
 
-destino: ID acceso*;
+destino: (ID | THIS) acceso*;
 
 acceso: acceso_arreglo | acceso_struct;
 
@@ -134,10 +148,11 @@ expresionMultiplicativa
 
 expresionUnaria
     : (NEGACION | MENOS | MAS) expresionUnaria
+    | (INCREMENTO | DECREMENTO) expresionUnaria
     | expresionPostfija
     ;
 
-expresionPostfija: expresionPrimaria sufijo*;
+expresionPostfija: expresionPrimaria sufijo* (INCREMENTO | DECREMENTO)?;
 
 sufijo
     : CA expresion CC
@@ -147,6 +162,8 @@ sufijo
 
 expresionPrimaria
     : literal
+    | THIS
+    | SUPER
     | ID
     | creacionObjeto
     | creacionArreglo
@@ -170,8 +187,17 @@ literal
     | NULL
     ;
 
+PACKAGE: 'package';
+IMPORT: 'import';
+
 PUBLIC: 'public';
+PRIVATE: 'private';
+PROTECTED: 'protected';
 CLASS: 'class';
+EXTENDS: 'extends';
+THIS: 'this';
+SUPER: 'super';
+OVERRIDE: '@Override';
 
 INT: 'int';
 DOUBLE: 'double';

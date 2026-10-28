@@ -10,6 +10,8 @@ public class NodoFuncion extends NodoAST {
     private final NodoTipo tipoRetorno; 
     private final List<NodoAST> cuerpo;
     private final boolean esConstructor;
+    private String modificador;
+    private boolean esOverride;
 
     public NodoFuncion(int linea, int columna, String nombre,
                         List<NodoParametro> parametros, NodoTipo tipoRetorno,
@@ -27,6 +29,22 @@ public class NodoFuncion extends NodoAST {
     public NodoTipo getTipoRetorno() { return tipoRetorno; }
     public List<NodoAST> getCuerpo() { return cuerpo; }
     public boolean isEsConstructor() { return esConstructor; }
+
+    public void setModificador(String modificador) {
+        this.modificador = modificador;
+    }
+
+    public String getModificador() {
+        return modificador;
+    }
+
+    public void setEsOverride(boolean esOverride) {
+        this.esOverride = esOverride;
+    }
+
+    public boolean isEsOverride() {
+        return esOverride;
+    }
 
     @Override
     public <T> T aceptar(VisitanteAST<T> visitante) {

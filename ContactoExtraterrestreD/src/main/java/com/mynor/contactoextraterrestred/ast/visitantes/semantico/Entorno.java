@@ -5,6 +5,9 @@
 package com.mynor.contactoextraterrestred.ast.visitantes.semantico;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  *
@@ -13,6 +16,7 @@ import java.util.ArrayDeque;
 public class Entorno {
 
     private final ArrayDeque<TablaSimbolos> ambitos = new ArrayDeque<>();
+    private final List<Simbolo> simbolosDeclarados = new ArrayList<>();
 
     public Entorno() {
         ambitos.push(new TablaSimbolos()); 
@@ -27,7 +31,11 @@ public class Entorno {
     }
 
     public boolean declarar(Simbolo simbolo) {
-        return ambitos.peek().declarar(simbolo);
+        boolean declarado = ambitos.peek().declarar(simbolo);
+        if (declarado) {
+            simbolosDeclarados.add(simbolo);
+        }
+        return declarado;
     }
 
     public Simbolo buscar(String nombre) {
@@ -38,5 +46,23 @@ public class Entorno {
             }
         }
         return null;
+    }
+
+    public List<Simbolo> buscarFunciones(String nombre) {
+        for (TablaSimbolos ambito : ambitos) {
+            List<Simbolo> lista = ambito.obtenerFunciones(nombre);
+            if (!lista.isEmpty()) {
+                return lista;
+            }
+        }
+        return Collections.emptyList();
+    }
+
+    public List<Simbolo> funcionesEnAmbitoActual(String nombre) {
+        return ambitos.peek().obtenerFunciones(nombre);
+    }
+
+    public List<Simbolo> getSimbolosDeclarados() {
+        return Collections.unmodifiableList(simbolosDeclarados);
     }
 }

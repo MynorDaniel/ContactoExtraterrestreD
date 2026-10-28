@@ -56,8 +56,7 @@ public class EditorPanel extends javax.swing.JPanel {
         comboLenguaje = new JComboBox<>(new String[]{
             "Y",
             "Z",
-            "PIG",
-            "C"
+            "PIG"
         });
 
         comboLenguaje.setBackground(new Color(45, 45, 45));
@@ -151,6 +150,7 @@ public class EditorPanel extends javax.swing.JPanel {
 
     public void setRutaArchivo(String rutaArchivo) {
         this.rutaArchivo = rutaArchivo;
+        this.rutaAbsolutaActual = rutaArchivo;
     }
 
     public boolean isModificado() {
@@ -258,8 +258,8 @@ public class EditorPanel extends javax.swing.JPanel {
 
         if (resultado == JFileChooser.APPROVE_OPTION) {
             File archivoSeleccionado = fileChooser.getSelectedFile();
-            rutaAbsolutaActual = archivoSeleccionado.getAbsolutePath();
-            archivoSeleccionado.getPath();
+            setRutaArchivo(archivoSeleccionado.getAbsolutePath());
+            comboLenguaje.setSelectedItem(Lenguaje.desdeNombreArchivo(archivoSeleccionado.getName()).name());
 
             try (BufferedReader br = new BufferedReader(new FileReader(archivoSeleccionado))) {
                 StringBuilder contenido = new StringBuilder();

@@ -30,7 +30,11 @@ sentencia
     | sExpresion
     ;
 
-declaracionEsto: ESTO ID DP tipo inicializacion PC;
+declaracionEsto
+    : ESTO ID DP tipo inicializacion PC
+    | ESTO ID DP expresion DP ID PC
+    | ESTO ID DP expresion PC
+    ;
 
 declaracionSeries: SERIES ID dimension+ DP tipo inicializacion? PC;
 
@@ -78,6 +82,7 @@ sFor
 
 forInit
     : ESTO ID DP tipo expresion
+    | ESTO ID DP expresion DP ID
     | destino ASIG expresion
     ;
 
@@ -92,7 +97,7 @@ sContinue: PERGE PC;
 
 sImprimir: PRINT expresion (PRINT expresion)* PC;
 
-sLeer: destino? LEER PC;
+sLeer: destino? LEER PC?;
 
 sExpresion: expresion PC;
 
@@ -144,6 +149,7 @@ literal
     | CHAR
     | VERUM
     | FALSUS
+    | NULL
     ;
 
 IMPORT: 'import';
@@ -165,6 +171,7 @@ BOOL: 'bool';
 
 VERUM: 'verum';
 FALSUS: 'falsus';
+NULL: 'null';
 
 SI: 'si';
 ALITER: 'aliter';

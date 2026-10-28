@@ -9,6 +9,7 @@ public class NodoAtributo extends NodoAST {
     private final String nombre;
     private final List<NodoDimension> dimensiones;
     private final NodoAST valorInicial; // puede ser null
+    private String modificador;
 
     public NodoAtributo(int linea, int columna, NodoTipo tipo, String nombre,
                          List<NodoDimension> dimensiones, NodoAST valorInicial) {
@@ -23,6 +24,14 @@ public class NodoAtributo extends NodoAST {
     public String getNombre() { return nombre; }
     public List<NodoDimension> getDimensiones() { return dimensiones; }
     public NodoAST getValorInicial() { return valorInicial; }
+
+    public void setModificador(String modificador) {
+        this.modificador = modificador;
+    }
+
+    public String getModificador() {
+        return modificador;
+    }
 
     @Override
     public <T> T aceptar(VisitanteAST<T> visitante) {
